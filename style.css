@@ -15,7 +15,7 @@ Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-c
 body {
   line-height: 1;
   background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
-  min-width: 768px;
+  min-width: 600px;
 }
 /* line 22, style.less */
 img {
