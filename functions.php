@@ -518,7 +518,7 @@ function wp_distinctionpp_custom_webfonts() {
 	$selected_font = $wp_distinctionpp_options['webfonts'];
 	$webfonts = wp_distinctionpp_get_valid_webfonts();
 	$webfont = $webfonts[$selected_font];
-	//print_r($webfonts);
+	if(!empty($webfont['nameplus'])) {
 	?>
 <link href="http://fonts.googleapis.com/css?family=<?php echo $webfont['nameplus']; ?>" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -536,4 +536,5 @@ function wp_distinctionpp_custom_webfonts() {
 	}
 </style>
 <?php }
+}
 add_action('wp_print_styles', 'wp_distinctionpp_custom_webfonts');
