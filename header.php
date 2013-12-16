@@ -148,7 +148,7 @@
 								'theme_location' => 'primary'
 							) );
 							} else { // otherwise, output the top-level hierarchy list of pages ?>
-								<ul class="menu">
+								<ul class="nav navbar-nav">
 									<?php if ( get_option( 'show_on_front' ) == 'posts' ) { // if posts, and not a static page, are being used as the site home page, display a link to HOME ?>
 										<li><a id="navhome" href="<?php echo home_url(); ?>">Home</a></li>
 									<?php }

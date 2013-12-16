@@ -16,6 +16,7 @@ Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-c
 body {
     line-height: 1;
     background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
+    min-width: 1132px;
 }
 h1, h2, h3, h4, h5, h6 {
     clear: both;
@@ -149,8 +150,6 @@ textarea,
 .pingback a.url {
     font-family: Georgia, "Bitstream Charter", serif;
 }
-#access .menu,
-#access div.menu ul,
 #cancel-comment-reply-link,
 .form-allowed-tags,
 #site-info,
@@ -485,8 +484,7 @@ a:hover {
 #access .menu-header {
     border-bottom:1px solid #000;
 }
-#access .menu-header,
-div.menu {
+#access .menu-header {
     background: #222 url(images/menu-sep.png) no-repeat top left;
     display:inline;
     float:left;
@@ -498,15 +496,7 @@ div.menu {
     clear:both;
 }
 #access .menu-header ul,
-div.menu ul {
-    list-style: none;
-    margin: 0;
-}
 #access .menu-header li,
-div.menu li {
-    float: left;
-    position: relative;
-}
 #access a {
     background:url(images/menu-sep.png) no-repeat top right;
     color: #fff;

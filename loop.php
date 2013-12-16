@@ -19,7 +19,7 @@
  */
 ?>
 
-<div id="post-wrapper" class="wrap">
+<div id="post-wrapper" class="wrap center-block">
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 	<div class="post_fliud_panel"><div id="post-0" class="post error404 not-found">
