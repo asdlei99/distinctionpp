@@ -16,7 +16,7 @@ Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-c
 body {
     line-height: 1;
     background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
-    min-width: 1132px;
+    min-width: 768px;
 }
 
 img {
@@ -27,7 +27,8 @@ img {
  * configure
  */
 
-@distincionpp_conf_content_width: 80%;
+@distincionpp_conf_content_width: 100%;
+@distincionpp_conf_content_inner_width: 80%;
 @distincionpp_conf_font_family: Arial, Helvetica, sans-serif;
 
 /**
@@ -339,7 +340,7 @@ a:hover {
     background: #222;
     display: block;
     margin: 0 auto;
-    width: @distincionpp_conf_content_width;
+    width: @distincionpp_conf_content_inner_width;
     height:38px;
 }
 #access .menu-header {
