@@ -15,7 +15,7 @@ Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-c
 body {
   line-height: 1;
   background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
-  min-width: 1132px;
+  min-width: 768px;
 }
 /* line 22, style.less */
 img {
@@ -108,7 +108,7 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 /* line 134, style.less */
 .single-attachment #content {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 /* =Fonts
 -------------------------------------------------------------- */
@@ -154,12 +154,12 @@ code {
 /* line 181, style.less */
 #main {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 /* line 186, style.less */
 #colophon {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 /* line 190, style.less */
 #wrapper {
