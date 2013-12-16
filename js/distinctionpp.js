@@ -3,8 +3,8 @@ jQuery(document).ready(function(){
 	jQuery("#post-wrapper").SimpleFliud({
         // 数值设置
         panel_width: 445,      // 面板宽度，单位为像素，默认为第一个选择器元素的宽度(默认为选择结果第一个元素的宽度)
-        margin_row: 15px,
-        margin_col: 15px,
+        margin_row: 15,
+        margin_col: 15,
         
         // 选择器设置
         panel: ">div.post_fliud_panel",            // 内部面板选择器(默认为div)
