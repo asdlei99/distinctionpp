@@ -485,9 +485,9 @@ function wp_distinctionpp_footer_credit() { ?>
             title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'wp_distinctionpp'); ?>" rel="generator">
         <?php printf( __('Powered by %s.', 'wp_distinctionpp'), 'WordPress' ); ?>
     </a>
-    <a class="wpn" href="<?php echo esc_url( __('http://wpninjas.net', 'wp_distinctionpp') ); ?>"
-            title="<?php esc_attr_e('The WP Ninjas', 'wp_distinctionpp'); ?>" rel="generator">
-        <?php printf( __('Built by %s.', 'wp_distinctionpp'), 'The WP Ninjas' ); ?>
+    <a class="wptheme" href="<?php echo esc_url( __('http://www.owent.net', 'wp_distinctionpp') ); ?>"
+            title="<?php esc_attr_e('OWenT', 'wp_distinctionpp'); ?>" rel="generator">
+        <?php printf( __('Built by %s.', 'wp_distinctionpp'), 'OWenT' ); ?>
     </a>
 
 </div><!-- #site-generator -->
