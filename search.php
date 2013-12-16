@@ -25,7 +25,7 @@ get_header(); ?>
 <?php else : ?>
 		<div id="container">
 			<div id="content" role="main">
-				<div id="post-0" class="no-results not-found">
+				<div class="post_fliud_panel"><div id="post-0" class="no-results not-found">
                 <div class="post-inner">
 					<h2 class="title"><?php _e( 'Nothing Found', 'wp_distinctionpp' ); ?></h2>
 					<div class="entry">
@@ -33,7 +33,7 @@ get_header(); ?>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
                 </div>
-				</div><!-- #post-0 -->
+				</div></div><!-- #post-0 -->
 
 			</div><!-- #content -->
 		</div><!-- #container -->
