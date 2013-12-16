@@ -11,15 +11,12 @@ Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-c
 */
 /* =Reset default browser CSS. 
 -------------------------------------------------------------- */
-/* line 17, style.less */
-html {
-  background: #a8a7a7 url(images/body-bg.jpg) repeat;
-}
-/* line 20, style.less */
+/* line 16, style.less */
 body {
   line-height: 1;
+  background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
 }
-/* line 23, style.less */
+/* line 20, style.less */
 h1,
 h2,
 h3,
@@ -29,7 +26,7 @@ h6 {
   clear: both;
   font-weight: normal;
 }
-/* line 28, style.less */
+/* line 25, style.less */
 img {
   max-width: 100%;
 }
@@ -42,7 +39,7 @@ img {
 /* 公共圆角阴影样式 */
 /* 公共动画效果 */
 /* 公共覆盖式渐变效果 */
-/* line 81, style.less */
+/* line 78, style.less */
 .gradient-cover-white {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
@@ -78,28 +75,28 @@ img {
 LAYOUT: Two columns
 DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
-/* line 103, style.less */
+/* line 100, style.less */
 #container {
   float: left;
   margin: 0 -270px 0 0;
   width: 100%;
 }
-/* line 108, style.less */
+/* line 105, style.less */
 #content {
   margin: 0 280px 0 20px;
 }
-/* line 111, style.less */
+/* line 108, style.less */
 #primary,
 #secondary {
   float: right;
   overflow: hidden;
   width: 250px;
 }
-/* line 117, style.less */
+/* line 114, style.less */
 #secondary {
   clear: right;
 }
-/* line 120, style.less */
+/* line 117, style.less */
 #footer {
   clear: both;
   width: 100%;
@@ -108,7 +105,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 LAYOUT: One column, no sidebar
 DESCRIPTION: One centered column with no sidebar
 */
-/* line 130, style.less */
+/* line 127, style.less */
 .one-column #content {
   margin: 0 auto;
   width: 100%;
@@ -117,14 +114,14 @@ DESCRIPTION: One centered column with no sidebar
 LAYOUT: Full width, no sidebar
 DESCRIPTION: Full width content with no sidebar; used for attachment pages
 */
-/* line 140, style.less */
+/* line 137, style.less */
 .single-attachment #content {
   margin: 0 auto;
   width: 80%;
 }
 /* =Fonts
 -------------------------------------------------------------- */
-/* line 148, style.less */
+/* line 145, style.less */
 body,
 input,
 textarea,
@@ -132,7 +129,7 @@ textarea,
 .pingback a.url {
   font-family: Georgia, "Bitstream Charter", serif;
 }
-/* line 155, style.less */
+/* line 152, style.less */
 #access .menu,
 #access div.menu ul,
 #cancel-comment-reply-link,
@@ -154,28 +151,28 @@ textarea,
 input[type=submit] {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
-/* line 176, style.less */
+/* line 173, style.less */
 pre {
   font-family: "Courier 10 Pitch", Courier, monospace;
 }
-/* line 179, style.less */
+/* line 176, style.less */
 code {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 /* =Structure
 -------------------------------------------------------------- */
 /* The main theme structure */
-/* line 189, style.less */
+/* line 186, style.less */
 #main {
   margin: 0 auto;
   width: 80%;
 }
-/* line 194, style.less */
+/* line 191, style.less */
 #colophon {
   margin: 0 auto;
   width: 80%;
 }
-/* line 198, style.less */
+/* line 195, style.less */
 #wrapper {
   clear: both;
   margin: 0 auto;
@@ -183,58 +180,58 @@ code {
   width: 100%;
 }
 /* Structure the footer area */
-/* line 206, style.less */
+/* line 203, style.less */
 #footer-widget-area {
   overflow: hidden;
 }
-/* line 209, style.less */
+/* line 206, style.less */
 #footer-widget-area .widget-area {
   float: left;
   margin-right: 20px;
   width: 220px;
 }
-/* line 214, style.less */
+/* line 211, style.less */
 #footer-widget-area #fourth {
   margin-right: 0;
 }
-/* line 217, style.less */
+/* line 214, style.less */
 #site-info {
   float: left;
   font-size: 12px;
   margin-left: 20px;
   width: 550px;
 }
-/* line 223, style.less */
+/* line 220, style.less */
 #site-generator {
   float: right;
   margin-right: 20px;
   width: 320px;
   text-align: right;
 }
-/* line 229, style.less */
+/* line 226, style.less */
 .page-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
-/* line 233, style.less */
+/* line 230, style.less */
 .page-title span {
   text-transform: capitalize;
 }
 /* =Global Elements
 -------------------------------------------------------------- */
 /* Main global 'theme' and typographic styles */
-/* line 242, style.less */
+/* line 239, style.less */
 body {
   font-size: 16px;
 }
-/* line 245, style.less */
+/* line 242, style.less */
 body,
 input,
 textarea {
   color: #333;
   line-height: 24px;
 }
-/* line 251, style.less */
+/* line 248, style.less */
 hr {
   background-color: #e7e7e7;
   border: 0;
@@ -243,7 +240,7 @@ hr {
   margin-bottom: 18px;
 }
 /* Text elements */
-/* line 260, style.less */
+/* line 257, style.less */
 h1,
 h2,
 h3,
@@ -253,38 +250,38 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
 }
-/* line 264, style.less */
+/* line 261, style.less */
 h1 {
   color: #000;
   font-size: 60px;
   line-height: 64px;
 }
-/* line 269, style.less */
+/* line 266, style.less */
 h2 {
   color: #222;
   font-size: 50px;
   line-height: 54px;
 }
-/* line 274, style.less */
+/* line 271, style.less */
 h3 {
   color: #333;
   font-size: 40px;
   line-height: 44px;
 }
-/* line 279, style.less */
+/* line 276, style.less */
 h4 {
   color: #444;
   font-size: 30px;
   line-height: 34px;
   text-transform: uppercase;
 }
-/* line 285, style.less */
+/* line 282, style.less */
 h5 {
   color: #555;
   font-size: 25px;
   line-height: 29px;
 }
-/* line 290, style.less */
+/* line 287, style.less */
 h6 {
   color: #666;
   font-size: 20px;
@@ -292,97 +289,97 @@ h6 {
   line-height: 26px;
   text-transform: uppercase;
 }
-/* line 297, style.less */
+/* line 294, style.less */
 p {
   line-height: 26px;
   margin-bottom: 18px;
 }
-/* line 301, style.less */
+/* line 298, style.less */
 ul {
   list-style: square;
   margin: 0 0 18px 1.5em;
 }
-/* line 305, style.less */
+/* line 302, style.less */
 ol {
   list-style: decimal;
   margin: 0 0 18px 1.5em;
 }
-/* line 309, style.less */
+/* line 306, style.less */
 li {
   line-height: 26px;
 }
-/* line 312, style.less */
+/* line 309, style.less */
 ol ol {
   list-style: upper-alpha;
 }
-/* line 315, style.less */
+/* line 312, style.less */
 ol ol ol {
   list-style: lower-roman;
 }
-/* line 318, style.less */
+/* line 315, style.less */
 ol ol ol ol {
   list-style: lower-alpha;
 }
-/* line 321, style.less */
+/* line 318, style.less */
 ul ul,
 ol ol,
 ul ol,
 ol ul {
   margin-bottom: 0;
 }
-/* line 327, style.less */
+/* line 324, style.less */
 dl {
   margin: 0 0 24px 0;
 }
-/* line 330, style.less */
+/* line 327, style.less */
 dt {
   font-weight: bold;
 }
-/* line 333, style.less */
+/* line 330, style.less */
 dd {
   margin-bottom: 18px;
 }
-/* line 336, style.less */
+/* line 333, style.less */
 strong {
   font-weight: bold;
 }
-/* line 339, style.less */
+/* line 336, style.less */
 cite,
 em,
 i {
   font-style: italic;
 }
-/* line 344, style.less */
+/* line 341, style.less */
 big {
   font-size: 131.25%;
 }
-/* line 347, style.less */
+/* line 344, style.less */
 ins {
   background: #ffc;
   text-decoration: none;
 }
-/* line 351, style.less */
+/* line 348, style.less */
 blockquote {
   background: url(images/blockquote.png) no-repeat 40px 6px;
   font-style: italic;
   min-height: 50px;
   padding: 0 75px 0 100px;
 }
-/* line 357, style.less */
+/* line 354, style.less */
 blockquote blockquote {
   padding: 0 0 0 100px;
 }
-/* line 360, style.less */
+/* line 357, style.less */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
-/* line 365, style.less */
+/* line 362, style.less */
 address {
   margin-bottom: 10px;
 }
-/* line 368, style.less */
+/* line 365, style.less */
 pre {
   background: #fff;
   color: #222;
@@ -390,13 +387,13 @@ pre {
   margin-bottom: 18px;
   padding: 1.5em;
 }
-/* line 375, style.less */
+/* line 372, style.less */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
-/* line 380, style.less */
+/* line 377, style.less */
 sup,
 sub {
   height: 0;
@@ -404,23 +401,23 @@ sub {
   position: relative;
   vertical-align: baseline;
 }
-/* line 387, style.less */
+/* line 384, style.less */
 sup {
   bottom: 1ex;
 }
-/* line 390, style.less */
+/* line 387, style.less */
 sub {
   top: .5ex;
 }
-/* line 393, style.less */
+/* line 390, style.less */
 q::before {
   content: '"';
 }
-/* line 396, style.less */
+/* line 393, style.less */
 q::after {
   content: '"';
 }
-/* line 399, style.less */
+/* line 396, style.less */
 input[type="text"],
 textarea {
   background: #f9f9f9;
@@ -431,28 +428,28 @@ textarea {
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 2px;
 }
-/* line 406, style.less */
+/* line 403, style.less */
 a:link {
   color: #09f;
 }
-/* line 409, style.less */
+/* line 406, style.less */
 a:visited {
   color: #09f;
 }
-/* line 412, style.less */
+/* line 409, style.less */
 a:active,
 a:hover {
   color: #F33;
 }
 /* Text meant only for screen readers */
-/* line 418, style.less */
+/* line 415, style.less */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
 }
 /* =Header
 -------------------------------------------------------------- */
-/* line 427, style.less */
+/* line 424, style.less */
 #header {
   background: #333;
   border-bottom: 1px solid #000;
@@ -460,7 +457,7 @@ a:hover {
   margin: 0 auto;
   width: 100%;
 }
-/* line 434, style.less */
+/* line 431, style.less */
 #site-title {
   font-size: 55px;
   line-height: 55px;
@@ -468,14 +465,14 @@ a:hover {
   text-align: center;
   width: 100%;
 }
-/* line 441, style.less */
+/* line 438, style.less */
 #site-title a {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-shadow: #000 1px 1px 3px;
 }
-/* line 448, style.less */
+/* line 445, style.less */
 #site-description {
   clear: both;
   color: #ccc;
@@ -487,25 +484,25 @@ a:hover {
   text-shadow: #000 1px 1px 3px;
 }
 /* This is the custom header image */
-/* line 461, style.less */
+/* line 458, style.less */
 #branding {
   clear: both;
   padding: 15px 0;
 }
 /* =Menu
 -------------------------------------------------------------- */
-/* line 470, style.less */
+/* line 467, style.less */
 #header-menu {
   background: #222;
   border-top: 1px solid #000;
   border-bottom: 2px solid #000;
   width: 100%;
 }
-/* line 477, style.less */
+/* line 474, style.less */
 .menu-top {
   padding-top: 15px;
 }
-/* line 481, style.less */
+/* line 478, style.less */
 #access {
   background: #222;
   display: block;
@@ -513,11 +510,11 @@ a:hover {
   width: 80%;
   height: 38px;
 }
-/* line 488, style.less */
+/* line 485, style.less */
 #access .menu-header {
   border-bottom: 1px solid #000;
 }
-/* line 491, style.less */
+/* line 488, style.less */
 #access .menu-header,
 div.menu {
   background: #222222 url(images/menu-sep.png) no-repeat top left;
@@ -526,24 +523,24 @@ div.menu {
   font-size: 13px;
   width: 100%;
 }
-/* line 499, style.less */
+/* line 496, style.less */
 #access hr {
   float: none;
   clear: both;
 }
-/* line 503, style.less */
+/* line 500, style.less */
 #access .menu-header ul,
 div.menu ul {
   list-style: none;
   margin: 0;
 }
-/* line 508, style.less */
+/* line 505, style.less */
 #access .menu-header li,
 div.menu li {
   float: left;
   position: relative;
 }
-/* line 513, style.less */
+/* line 510, style.less */
 #access a {
   background: url(images/menu-sep.png) no-repeat top right;
   color: #fff;
@@ -552,7 +549,7 @@ div.menu li {
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 521, style.less */
+/* line 518, style.less */
 #access ul ul {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
@@ -566,16 +563,16 @@ div.menu li {
   width: 180px;
   z-index: 99999;
 }
-/* line 531, style.less */
+/* line 528, style.less */
 #access ul ul li {
   min-width: 180px;
 }
-/* line 534, style.less */
+/* line 531, style.less */
 #access ul ul ul {
   left: 100%;
   top: 0;
 }
-/* line 538, style.less */
+/* line 535, style.less */
 #access ul ul a {
   background: transparent;
   color: #fff;
@@ -584,7 +581,7 @@ div.menu li {
   width: 160px;
   height: auto;
 }
-/* line 547, style.less */
+/* line 544, style.less */
 #access ul ul :hover > a {
   background: #333;
   border-radius: 5px;
@@ -593,12 +590,12 @@ div.menu li {
   -webkit-border-radius: 5px;
   color: #fff;
 }
-/* line 552, style.less */
+/* line 549, style.less */
 #access li:hover > a {
   background: #09F;
   color: #fff;
 }
-/* line 556, style.less */
+/* line 553, style.less */
 #access ul li:hover > ul {
   background: #09F;
   border-radius: 5px;
@@ -607,14 +604,14 @@ div.menu li {
   -webkit-border-radius: 5px;
   display: block;
 }
-/* line 561, style.less */
+/* line 558, style.less */
 #access ul li.current_page_item > a,
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
   color: #fff;
 }
-/* line 567, style.less */
+/* line 564, style.less */
 * html #access ul li.current_page_item a,
 * html #access ul li.current-menu-ancestor a,
 * html #access ul li.current-menu-item a,
@@ -622,7 +619,7 @@ div.menu li {
 * html #access ul li a:hover {
   color: #fff;
 }
-/* line 575, style.less */
+/* line 572, style.less */
 #search-form {
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -632,7 +629,7 @@ div.menu li {
   height: 38px;
   padding: 6px;
 }
-/* line 581, style.less */
+/* line 578, style.less */
 #searchform #s {
   background: url(images/search-bg.png) no-repeat -1px -1px;
   border: 0;
@@ -642,22 +639,22 @@ div.menu li {
   width: 160px;
   height: 25px;
 }
-/* line 590, style.less */
+/* line 587, style.less */
 #searchform #searchsubmit {
   display: none;
 }
 /* =Content
 -------------------------------------------------------------- */
-/* line 598, style.less */
+/* line 595, style.less */
 #main {
   overflow: hidden;
   padding-bottom: 20px;
 }
-/* line 602, style.less */
+/* line 599, style.less */
 #content {
   margin-bottom: 36px;
 }
-/* line 606, style.less */
+/* line 603, style.less */
 pre,
 kbd,
 tt,
@@ -665,23 +662,23 @@ var {
   font-size: 15px;
   line-height: 21px;
 }
-/* line 611, style.less */
+/* line 608, style.less */
 code {
   font-size: 13px;
 }
-/* line 615, style.less */
+/* line 612, style.less */
 dt,
 th {
   color: #000;
 }
-/* line 619, style.less */
+/* line 616, style.less */
 table {
   border: 1px solid #999;
   margin: 0 -1px 24px 0;
   text-align: left;
   width: 100%;
 }
-/* line 625, style.less */
+/* line 622, style.less */
 tr th,
 thead th {
   color: #333;
@@ -690,21 +687,21 @@ thead th {
   line-height: 18px;
   padding: 9px 24px;
 }
-/* line 632, style.less */
+/* line 629, style.less */
 tr td {
   border-top: 1px solid #999;
   padding: 6px 24px;
 }
-/* line 636, style.less */
+/* line 633, style.less */
 tr.odd td {
   background: #fff;
 }
-/* line 640, style.less */
+/* line 637, style.less */
 .home .sticky {
   border: 5px solid #09F;
   width: 870px;
 }
-/* line 645, style.less */
+/* line 642, style.less */
 .page-link {
   clear: both;
   color: #333;
@@ -712,7 +709,7 @@ tr.odd td {
   margin: 0 0 22px;
   word-spacing: 0.5em;
 }
-/* line 653, style.less */
+/* line 650, style.less */
 .page-link a:link,
 .page-link a:visited {
   background: #09F;
@@ -725,13 +722,13 @@ tr.odd td {
   padding: 0.5em 0.75em;
   text-decoration: none;
 }
-/* line 661, style.less */
+/* line 658, style.less */
 .page-link a:hover,
 .page-link a:active {
   background: #333;
   color: #fff;
 }
-/* line 666, style.less */
+/* line 663, style.less */
 #entry-author-info {
   background: #fff;
   border-radius: 5px;
@@ -745,7 +742,7 @@ tr.odd td {
   overflow: hidden;
   width: 100%;
 }
-/* line 676, style.less */
+/* line 673, style.less */
 #entry-author-info #author-avatar {
   background: #fff;
   border: 1px solid #e7e7e7;
@@ -754,36 +751,36 @@ tr.odd td {
   margin: 0 -104px 0 0;
   padding: 11px;
 }
-/* line 684, style.less */
+/* line 681, style.less */
 #entry-author-info #author-description {
   float: left;
   margin: 0 0 0 104px;
 }
-/* line 688, style.less */
+/* line 685, style.less */
 #entry-author-info h2 {
   color: #000;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 694, style.less */
+/* line 691, style.less */
 .entry-utility {
   clear: both;
   color: #888;
   font-size: 12px;
   line-height: 18px;
 }
-/* line 700, style.less */
+/* line 697, style.less */
 .entry-meta a,
 .entry-utility a {
   color: #888;
 }
-/* line 704, style.less */
+/* line 701, style.less */
 .entry-meta a:hover,
 .entry-utility a:hover {
   color: #ff4b33;
 }
-/* line 708, style.less */
+/* line 705, style.less */
 .term-lists {
   background: url(images/comment-bg.png);
   border-radius: 5px;
@@ -797,33 +794,33 @@ tr.odd td {
   margin-bottom: 10px;
   padding: 0 8px;
 }
-/* line 718, style.less */
+/* line 715, style.less */
 .entry-utility-prep {
   font-weight: bold;
 }
-/* line 721, style.less */
+/* line 718, style.less */
 .post .term-lists a {
   color: #333;
   text-decoration: underline;
 }
-/* line 725, style.less */
+/* line 722, style.less */
 .tag-links,
 .cat-links {
   display: block;
   margin: 5px 0;
 }
-/* line 729, style.less */
+/* line 726, style.less */
 #content .video-player {
   padding: 0;
 }
-/* line 733, style.less */
+/* line 730, style.less */
 .single .post,
 .error404 .post {
   margin: 0;
   padding: 4px 3px 3px;
   width: 100%;
 }
-/* line 739, style.less */
+/* line 736, style.less */
 .single .post-inner,
 .page .post-inner,
 .error404 .post-inner {
@@ -831,18 +828,18 @@ tr.odd td {
 }
 /* =Images
 -------------------------------------------------------------- */
-/* line 747, style.less */
+/* line 744, style.less */
 .single #content .wp-caption img {
   max-width: 545px;
   height: auto;
 }
-/* line 751, style.less */
+/* line 748, style.less */
 .single #content img {
   margin: 0;
   max-width: 565px;
   height: auto;
 }
-/* line 756, style.less */
+/* line 753, style.less */
 #content .alignleft,
 #content img.alignleft {
   display: inline;
@@ -850,7 +847,7 @@ tr.odd td {
   margin-right: 24px;
   margin-top: 4px;
 }
-/* line 763, style.less */
+/* line 760, style.less */
 #content .alignright,
 #content img.alignright {
   display: inline;
@@ -858,7 +855,7 @@ tr.odd td {
   margin-left: 24px;
   margin-top: 4px;
 }
-/* line 770, style.less */
+/* line 767, style.less */
 #content .aligncenter,
 #content img.aligncenter {
   clear: both;
@@ -866,13 +863,13 @@ tr.odd td {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 778, style.less */
+/* line 775, style.less */
 #content img.alignleft,
 #content img.alignright,
 #content img.aligncenter {
   margin-bottom: 12px;
 }
-/* line 783, style.less */
+/* line 780, style.less */
 #content .wp-caption {
   background: #fff;
   line-height: 18px;
@@ -881,55 +878,55 @@ tr.odd td {
   padding: 4px;
   text-align: center;
 }
-/* line 791, style.less */
+/* line 788, style.less */
 #content .wp-caption img {
   margin: 5px 5px 0;
 }
-/* line 794, style.less */
+/* line 791, style.less */
 #content .wp-caption p.wp-caption-text {
   color: #888;
   font-size: 12px;
   margin: 5px;
 }
-/* line 799, style.less */
+/* line 796, style.less */
 #content .wp-smiley {
   margin: 0;
 }
-/* line 802, style.less */
+/* line 799, style.less */
 .gallery {
   margin: 10px auto 18px;
   padding-top: 10px;
 }
-/* line 806, style.less */
+/* line 803, style.less */
 #content .gallery .gallery-item {
   float: left;
   margin-top: 0;
   text-align: center;
   width: 33%;
 }
-/* line 812, style.less */
+/* line 809, style.less */
 #content .gallery img {
   border: 2px solid #cfcfcf;
 }
-/* line 815, style.less */
+/* line 812, style.less */
 #content .gallery .gallery-caption {
   color: #888;
   font-size: 12px;
   margin: 0 0 12px;
 }
-/* line 820, style.less */
+/* line 817, style.less */
 #content .gallery dl {
   margin: 0;
 }
-/* line 823, style.less */
+/* line 820, style.less */
 #content .gallery img {
   border: 10px solid #f1f1f1;
 }
-/* line 826, style.less */
+/* line 823, style.less */
 #content .gallery br + br {
   display: none;
 }
-/* line 829, style.less */
+/* line 826, style.less */
 #content .attachment img {
   /* single attachment images should be centered */
 
@@ -937,13 +934,13 @@ tr.odd td {
   max-width: 868px;
   margin: 0 auto;
 }
-/* line 835, style.less */
+/* line 832, style.less */
 .attachment-archive {
   margin-bottom: 20px;
 }
 /* =ENTRY DEFAULTS
 -------------------------------------------------------------- */
-/* line 842, style.less */
+/* line 839, style.less */
 .type-page {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -957,7 +954,7 @@ tr.odd td {
   color: #7B7D83;
   padding: 4px 3px 3px;
 }
-/* line 850, style.less */
+/* line 847, style.less */
 .no-results {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -971,7 +968,7 @@ tr.odd td {
   margin-top: 10px;
   padding: 4px 3px 3px;
 }
-/* line 858, style.less */
+/* line 855, style.less */
 .search .type-page {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -987,12 +984,12 @@ tr.odd td {
   padding: 0;
   width: 430px;
 }
-/* line 868, style.less */
+/* line 865, style.less */
 .wrap {
   width: 100%;
   overflow: hidden;
 }
-/* line 872, style.less */
+/* line 869, style.less */
 .post {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -1005,7 +1002,10 @@ tr.odd td {
   -webkit-border-radius: 5px;
   color: #7B7D83;
   margin: 10px;
-  width: 430px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* line 881, style.less */
 .post a {
