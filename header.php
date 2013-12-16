@@ -84,12 +84,10 @@
                     </div>
 
                     <div class="menu-header">
-
 						<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
                         <?php wp_nav_menu( array( 'container' => '', 'theme_location' => 'primary' ) ); ?>
 
                         <?php if ( 'true' == $wp_distinctionpp_options['display_menu_search_form'] ) { // Enabled by default ?>
-
 						<div id="search-form"><?php get_search_form(); ?></div>
 
 						<?php } ?>
