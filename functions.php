@@ -131,7 +131,7 @@ function wp_distinctionpp_init_method() {
 	if(!is_admin()) {
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'es5-shim', get_template_directory_uri() . '/js/es5-shim/es5-shim.min.js?ver=2.1.0' );
-		wp_enqueue_script( 'less', get_template_directory_uri() . '/js/es5-shim/js/less.min.js?ver=2.1.0' , array('es5-shim') );
+		wp_enqueue_script( 'less', get_template_directory_uri() . '/js/less.min.js?ver=2.1.0' , array('es5-shim') );
 		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/js/bootstrap.min.js?ver=3.0.3' , array('jquery') );
 	    wp_enqueue_script( 'simplemetro-plugin', get_template_directory_uri() . '/js/SimpleMetro.plugin.min.js?ver=0.8.0', array('jquery') );
 		wp_enqueue_script( 'distinctionpp-js', get_template_directory_uri() . '/js/distinctionpp.js', array('jquery', 'masonry') );
