@@ -512,29 +512,3 @@ function wp_distinctionpp_sidebar() {
 	<?php }
 }
 add_action('wp_print_styles', 'wp_distinctionpp_sidebar');
-
-function wp_distinctionpp_custom_webfonts() {
-	$wp_distinctionpp_options = get_option( 'theme_wp_distinctionpp_options' );
-	$selected_font = $wp_distinctionpp_options['webfonts'];
-	$webfonts = wp_distinctionpp_get_valid_webfonts();
-	$webfont = $webfonts[$selected_font];
-	if(!empty($webfont['nameplus'])) {
-	?>
-<link href="http://fonts.googleapis.com/css?family=<?php echo $webfont['nameplus']; ?>" rel="stylesheet" type="text/css">
-<style type="text/css">
-	.page-title,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	#site-title a,
-	#site-description,
-	.widget-title {
-	font-family: '<?php echo $webfont['name']; ?>', arial, serif;
-	}
-</style>
-<?php }
-}
-add_action('wp_print_styles', 'wp_distinctionpp_custom_webfonts');

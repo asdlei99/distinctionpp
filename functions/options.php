@@ -1,7 +1,7 @@
 <?php
 /*****************************************************************************************
 * Theme Options Functions
-* 
+*
 *  - Define Default Theme Options
 *  - Register/Initialize Theme Options
 *  - Define Admin Settings Page
@@ -25,82 +25,14 @@ function wp_distinctionpp_get_default_options() {
 		'analytics_code' => '',
         'display_footer_credit' => true,
 		'sidebar_position' => 'right',
-		'webfonts' => 'architects_daughter',
-        'theme_version' => '1.1'
+        'theme_version' => '1.0'
     );
     return $options;
 }
 
-function wp_distinctionpp_get_valid_webfonts() {
-	
-	$webfonts = array( 
-        	'architects_daughter' => array(
-				'slug' => 'architects_daughter',
-				'name' => 'Architects Daughter',
-				'nameplus' => 'Architects+Daughter'
-			),
-			'megrim' => array(
-				'slug' => 'megrim',
-				'name' => 'Megrim',
-				'nameplus' => 'Megrim'
-			),
-			'medievalsharp' => array(
-				'slug' => 'medievalsharp',
-				'name' => 'MedievalSharp',
-				'nameplus' => 'MedievalSharp'
-			),
-			'specialelite' => array(
-				'slug' => 'specialelite',
-				'name' => 'Special Elite',
-				'nameplus' => 'Special+Elite'
-			),
-			'quattrocentosans' => array(
-				'slug' => 'quattrocentosans',
-				'name' => 'Quattrocento Sans',
-				'nameplus' => 'Quattrocento+Sans'
-			),
-			'kristi' => array(
-				'slug' => 'kristi',
-				'name' => 'Kristi',
-				'nameplus' => 'Kristi'
-			),
-			'dawningofanewday' => array(
-				'slug' => 'dawningofanewday',
-				'name' => 'Dawning of a New Day',
-				'nameplus' => 'Dawning+of+a+New+Day'
-			),
-			'allertastencil' => array(
-				'slug' => 'allertastencil',
-				'name' => 'Allerta Stencil',
-				'nameplus' => 'Allerta+Stencil'
-			),
-			'calligraffitti' => array(
-				'slug' => 'calligraffitti',
-				'name' => 'Calligraffitti',
-				'nameplus' => 'Calligraffitti'
-			),
-			'luckiestguy' => array(
-				'slug' => 'luckiestguy',
-				'name' => 'Luckiest Guy',
-				'nameplus' => 'Luckiest+Guy'
-			),
-			'fontdinerswanky' => array(
-				'slug' => 'fontdinerswanky',
-				'name' => 'Fontdiner Swanky',
-				'nameplus' => 'Fontdiner+Swanky'
-			),
-			'bigshotone' => array(
-				'slug' => 'bigshotone',
-				'name' => 'Bigshot One',
-				'nameplus' => 'Bigshot+One'
-			),
-	);
-	return $webfonts;
-}
-
 function wp_distinctionpp_get_settings_page_tabs() {
-	
-	$tabs = array( 
+
+	$tabs = array(
         'general' => 'General',
         'layout' => 'Layout',
 		'style' => 'Style'
@@ -116,21 +48,20 @@ function wp_distinctionpp_options_init() {
 	// set options equal to defaults
 	global $wp_distinctionpp_options;
 	$wp_distinctionpp_options = get_option( 'theme_wp_distinctionpp_options' );
-	
+
 	if ( false === $wp_distinctionpp_options ) {
 		$wp_distinctionpp_options = wp_distinctionpp_get_default_options();
 	}
 	update_option( 'theme_wp_distinctionpp_options', $wp_distinctionpp_options );
-	
+
 	// Update New Options (Version 1.2)
-	if ( '1.2' > $wp_distinctionpp_options['theme_version'] ) {
+	if ( '1.0' > $wp_distinctionpp_options['theme_version'] ) {
 		$default_options = wp_distinctionpp_get_default_options();
 		$wp_distinctionpp_options['sidebar_position'] = $default_options['sidebar_position'];
-		$wp_distinctionpp_options['webfonts'] = $default_options['architects_daughter'];
-		$wp_distinctionpp_options['theme_version'] = '1.2';
+		$wp_distinctionpp_options['theme_version'] = '1.0';
 		update_option( 'theme_wp_distinctionpp_options', $wp_distinctionpp_options );
 	}
-	
+
 }
 // Initialize Theme options
 add_action('after_setup_theme', 'wp_distinctionpp_options_init', 9 );
@@ -155,11 +86,11 @@ function wp_distinctionpp_admin_options_page_tabs( $current = 'general' ) {
     else:
         $current = 'general';
     endif;
-    
+
     $tabs = wp_distinctionpp_get_settings_page_tabs();
-    
+
     $links = array();
-    
+
     foreach( $tabs as $tab => $name ) :
         if ( $tab == $current ) :
             $links[] = "<a class='nav-tab nav-tab-active' href='?page=wp_distinctionpp-settings&tab=$tab'>$name</a>";
@@ -167,16 +98,16 @@ function wp_distinctionpp_admin_options_page_tabs( $current = 'general' ) {
             $links[] = "<a class='nav-tab' href='?page=wp_distinctionpp-settings&tab=$tab'>$name</a>";
         endif;
     endforeach;
-    
+
     echo '<div id="icon-themes" class="icon32"><br /></div>';
     echo '<h2 class="nav-tab-wrapper">';
     foreach ( $links as $link )
         echo $link;
     echo '</h2>';
-    
+
 }
 
-// Admin settings page markup 
+// Admin settings page markup
 function wp_distinctionpp_admin_options_page() { ?>
 
 	<div class="wrap">
@@ -185,10 +116,10 @@ function wp_distinctionpp_admin_options_page() { ?>
     			echo "<div class='updated'><p>Theme settings updated successfully.</p></div>";
 		} ?>
 		<form action="options.php" method="post">
-		<?php 
+		<?php
 			settings_fields('theme_wp_distinctionpp_options');
 			do_settings_sections('wp_distinctionpp');
-			
+
 			$tab = ( isset( $_GET['tab'] ) ? $_GET['tab'] : 'general' );
 		?>
 			<input name="theme_wp_distinctionpp_options[submit-<?php echo $tab; ?>]" type="submit" class="button-primary" value="<?php esc_attr_e('Save Settings', 'wp_distinctionpp'); ?>" />
@@ -198,7 +129,7 @@ function wp_distinctionpp_admin_options_page() { ?>
 <?php }
 
 // Admin settings page Form Fields markup
-// 
+//
 // Codex Reference: http://codex.wordpress.org/Settings_API
 // Reference: http://ottopress.com/2009/wordpress-settings-api-tutorial/
 // Reference: http://planetozh.com/blog/2009/05/handling-plugins-options-in-wordpress-28-with-register_setting/
@@ -211,40 +142,6 @@ add_action('admin_init', 'wp_distinctionpp_register_options');
 
 /* Enqueue Custom Admin Page Stylesheet
 *******************************************************************************************/
-
-function wp_distinctionpp_enqueue_admin_style() {
-
-	// define admin stylesheet
-	$admin_handle = 'wp_distinctionpp_admin_stylesheet';
-	$admin_stylesheet = get_template_directory_uri() . '/functions/wp_distinctionpp-admin.css';
-	$wp_distinctionpp_options = get_option( 'theme_wp_distinctionpp_options' );
-	$webfonts = wp_distinctionpp_get_valid_webfonts();
-	if ($webfonts) {
-		foreach ( $webfonts as $fonts ) {
-			wp_enqueue_style( $fonts['slug'], 'http://fonts.googleapis.com/css?family='.$fonts['nameplus'].'', '', false );
-		}
-	}
-	wp_enqueue_style( $admin_handle, $admin_stylesheet, '', false );
-}
-// Enqueue Admin Stylesheet at admin_print_styles()
-add_action('admin_print_styles-appearance_page_wp_distinctionpp-settings', 'wp_distinctionpp_enqueue_admin_style', 1 );
-add_action('admin_print_styles-appearance_page_wp_distinctionpp-reference', 'wp_distinctionpp_enqueue_admin_style', 11 );
-
-function wp_distinctionpp_enqueue_admin_font_family() {
-
-	$wp_distinctionpp_options = get_option( 'theme_wp_distinctionpp_options' );
-	$webfonts = wp_distinctionpp_get_valid_webfonts();
-	if ($webfonts) {
-		echo '<style type="text/css">';
-		foreach ( $webfonts as $fonts ) {
-			echo '.appearance_page_wp_distinctionpp-settings .'.$fonts['slug'].'{font-family:"'.$fonts['name'].'", arial, serif;}';
-		}
-		echo '</style>';
-	}
-}
-// Enqueue Admin Stylesheet at admin_print_styles()
-add_action('admin_print_styles-appearance_page_wp_distinctionpp-settings', 'wp_distinctionpp_enqueue_admin_font_family', 99 );
-
 
 /* Setup the Theme Admin Settings Page Contextual help
 *******************************************************************************************/

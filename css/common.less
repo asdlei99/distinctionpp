@@ -1,8 +1,14 @@
 /**
+ * load config
+ */
+
+@import "config.less";
+
+/**
  * common style
  */
 
-/* ¹«¹²Ô²½ÇÒõÓ°ÑùÊ½ */
+/* å…¬å…±åœ†è§’é˜´å½±æ ·å¼ */
 .border-radius (@rest...) {
     border-radius: @arguments;
     -moz-border-radius: @arguments;
@@ -26,7 +32,7 @@
     .box-shadow(@h_shadow, @v_shadow, @blur, @color);
 }
 
-/* ¹«¹²¶¯»­Ğ§¹û */
+/* å…¬å…±åŠ¨ç”»æ•ˆæœ */
 .transition(@rest...) {
     -webkit-transition: @arguments;
     -moz-transition: @arguments;
@@ -39,7 +45,7 @@
     .transition(all, @time_sec, @func);
 }
 
-/* ¹«¹²¸²¸ÇÊ½½¥±äĞ§¹û */
+/* å…¬å…±è¦†ç›–å¼æ¸å˜æ•ˆæœ */
 .gradient-cover-white {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background-color: White;

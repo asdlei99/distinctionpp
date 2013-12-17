@@ -1,0 +1,157 @@
+@import "../common.less";
+
+/* =Print Style
+-------------------------------------------------------------- */
+
+@media print {
+    body {
+        background: none !important;
+        color:#000 !important;
+    }
+    #wrapper {
+        clear: both !important;
+        display: block !important;
+        float: none !important;
+        margin:0;
+        padding:0;
+        position: relative !important;
+        width: 100%;
+    }
+    #wrapper #container div.post[style], #wrapper #container .type-page, #wrapper #container .post {
+        background:#fff !important;
+        border:0 !important;
+        border-bottom: 1px solid #ccc !important;
+        .box-shadow(0 0 0 rgba(255, 255, 255, 0.0) ) !important;
+        color:#000 !important;
+        display:block !important;
+        font-family:@distincionpp_conf_font_family !important;
+        overflow:hidden !important;
+        position:relative !important;
+        top:auto !important;
+        left: auto !important;
+        width: 99% !important;
+    }
+    #footer, #colophon, #footer-meta, #comments {
+        background:#fff !important;
+        border:0 !important;
+        border-bottom: 1px solid #ccc !important;
+        .box-shadow(0 0 0 rgba(255, 255, 255, 0.0) ) !important;
+        color:#000 !important;
+        display:block !important;
+        font-family:@distincionpp_conf_font_family !important;
+        overflow:hidden !important;
+        width: 99% !important;
+    }
+    #wrapper .post .post-inner, #wrapper .type-page .post-inner {
+        border:0 !important;
+        padding:0 !important;
+    }
+    #wrapper .post .post-inner a {
+        border:0 !important;
+        content: " (" attr(href) ") " !important;
+        padding:0 !important;
+    }
+    #wrapper #container .post .post-inner .title {
+        color:#000 !important;
+        font-family:@distincionpp_conf_font_family !important;
+    }
+    #wrapper .post .post-inner .utility {
+        background:#fff !important;
+        border:0 !important;
+        box-shadow:0 0 0 rgba(255, 255, 255, 0.0) !important;
+    }
+    #wrapper .post .post-inner .utility a {
+        color:#000 !important;
+        content: " (" attr(href) ") ";
+    }
+    #header {
+        border-bottom: 2pt solid #000;
+        padding-bottom: 18pt;
+    }
+    #colophon {
+        border-top: 2pt solid #000;
+    }
+    #site-title a,
+    #site-description {
+        color: #333 !important;
+        float: left;
+        font-family:@distincionpp_conf_font_family;
+        font-size:18px;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 0;
+    }
+    #site-title a {
+        color: #333;
+    }
+    .entry {
+        font-size: 14pt;
+        line-height: 1.6em;
+    }
+    .title {
+        font-size: 21pt;
+    }
+    #access,
+    #branding img,
+    #respond,
+    .comment-edit-link,
+    .nocomments,
+    .edit-link,
+    .navigation,
+    .page-link,
+    .widget-area,
+    #header-menu {
+        display: none !important;
+    }
+    #container,
+    #header,
+    #footer {
+        background:#fff;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    #content,
+    .one-column #content {
+        margin: 24pt 0 0;
+        width: 100%;
+    }
+    .wp-caption p {
+        font-size: 11pt;
+    }
+    #site-info,
+    #site-generator {
+        color: #333;
+        float: none;
+        width: auto;
+    }
+    #colophon {
+        width: auto;
+    }
+    img#wpstats {
+        display: none;
+    }
+    #site-generator a {
+        margin: 0;
+        padding: 0;
+    }
+    #entry-author-info {
+        border: 1px solid #e7e7e7;
+    }
+    #main {
+        display: inline;
+    }
+    .home .sticky {
+        border: none;
+    }
+    .col {
+        display:inline;
+        float:left;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        position:relative;
+    }
+    .lst {
+        clear: right;
+        margin-right: 0 !important;
+    }
+}

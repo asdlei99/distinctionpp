@@ -1,0 +1,85 @@
+/** Widget Areas **/
+@import "../common.less";
+
+.widget-area ul {
+    list-style: none;
+    margin-left: 0;
+}
+.widget-area li {
+    margin-bottom: 10px;
+}
+.widget-area li li{
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+.widget-area ul ul {
+    list-style: square;
+    margin-left: 1.3em;
+}
+.widget_search #s {/* This keeps the search inputs in line */
+    width: 55%;
+}
+.widget_search label {
+    display: none;
+}
+.widget-container {
+    background: url(images/widget-bg.png);
+    margin: 0;
+    border:1px solid #222;
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    .border-radius_s(5px);
+    color: #fff;
+    padding: 10px 15px 15px 15px;
+}
+#footer-widget-area .widget-container {
+    background: url(images/widget-bg.png);
+    margin: 0 0 18px 0;
+    border:1px solid #222;
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    .border-radius_s(5px);
+    color: #fff;
+    margin-top:-2px;
+    padding: 2px 15px 15px;
+}
+.widget-title {
+    border-bottom:1px solid #ccc;
+    color: #fff;
+    font-family: @distincionpp_conf_font_family;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin-bottom:10px;
+    padding: 3px 0 6px;
+}
+#footer-widget-area .widget-title {
+    border-bottom:0 solid #ccc;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom:10px;
+    padding-bottom: 2px;
+}
+.widget-area a:link,
+.widget-area a:visited {
+    color:#ccc;
+    text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.widget-area .entry-meta {
+    font-size: 11px;
+}
+
+.widget_rss a.rsswidget {
+    color: #000;
+}
+.widget_rss a.rsswidget:hover {
+    color: #ff4b33;
+}
+.widget_rss .widget-title img {
+    width: 11px;
+    height: 11px;
+}

@@ -1,0 +1,26 @@
+/** Pagination **/
+@import "../common.less";
+
+.pagination {
+    margin: 20px 0;
+    text-align:center;
+}
+.pagination a, .pagination .current {
+    background:#333;
+    border:1px solid #222;
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    .border-radius(5px);
+    color:#fff; 
+    margin-right:4px;
+    font-size:16px;
+    line-height:16px;
+    padding:2px 8px 5px;
+    text-align:center;
+    text-decoration:none;
+}
+.pagination a:hover {background:#09F; color:#fff;}
+
+.pagination .current {
+    background:#f1f1f1;
+    color:#333;
+}

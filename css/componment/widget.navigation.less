@@ -1,0 +1,41 @@
+/** Navigation **/
+@import "../common.less";
+
+.navigation {
+    background: #222;
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    .border-radius(5px);
+    color: #888;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px;
+}
+.navigation a:link,
+.navigation a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.navigation a:active,
+.navigation a:hover {
+    color: #f1f1f1;
+}
+.nav-previous {
+    float: left;
+    width: 40%;
+}
+.nav-next {
+    float: right;
+    text-align: right;
+    width: 40%;
+}
+#nav-above {
+    margin: 0 0 18px 0;
+}
+.paged #nav-above,
+.single #nav-above {
+    display: block;
+}
+#nav-below {
+    margin: 18px 0 0 0;
+}

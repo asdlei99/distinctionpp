@@ -5,12 +5,18 @@ Theme Name: distinctionpp
 Used to style the TinyMCE editor.
 */
 /**
+ * load config
+ */
+/**
+ * configure
+ */
+/**
  * common style
  */
-/* ����Բ����Ӱ��ʽ */
-/* ��������Ч�� */
-/* ��������ʽ����Ч�� */
-/* line 43, css\common.less */
+/* 公共圆角阴影样式 */
+/* 公共动画效果 */
+/* 公共覆盖式渐变效果 */
+/* line 49, css\common.less */
 .gradient-cover-white {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
@@ -60,7 +66,9 @@ Used to style the TinyMCE editor.
 .wp-caption p.wp-caption-text {
   margin: 0 0 4px;
 }
-/* line 29, editor-style.less */
-.wp-smiley {
+/** ================= wp-style ================= **/
+/** wp-smiley **/
+/* line 2, css\componment\wpstyle.smiley.less */
+#content .wp-smiley {
   margin: 0;
 }

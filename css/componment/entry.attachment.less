@@ -1,0 +1,79 @@
+/** attachment **/
+@import "../common.less";
+
+#content .attachment img { /* single attachment images should be centered */
+    height: auto;
+    max-width: 868px;
+    margin: 0 auto;
+}
+
+.attachment-archive {
+    margin-bottom: 20px;
+}
+
+/**TYPE-ATTACHMENT**/
+
+.type-attachment {
+    background:#fff;
+    color:#000;
+    .border-radius_s(0);
+}
+
+.type-attachment .post-inner {
+    border:0;
+}
+
+.type-attachment .title {
+    background: url(images/comment-bg.png);
+    .border-radius_s(10px);
+    display:inline-block;
+    font-size: 26px;
+    font-weight:bold;
+    line-height:28px;
+    margin: 10px 10px 20px 10px;
+    padding:0 5px;
+}
+
+.type-attachment .entry {
+    overflow:hidden;
+}
+
+.entry-attachment {
+    overflow:hidden;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.entry-caption {
+    text-align:center;
+}
+
+
+/* =Attachment pages
+-------------------------------------------------------------- */
+
+.attachment .entry-content .entry-caption {
+    font-size: 140%;
+    margin-top: 24px;
+}
+.attachment .entry-content .nav-previous a:before {
+    content: '\2190\00a0';
+}
+.attachment .entry-content .nav-next a:after {
+    content: '\00a0\2192';
+}
+
+
+
+/**Attachment pages**/
+
+.attachment .entry-content .entry-caption {
+    font-size: 140%;
+    margin-top: 24px;
+}
+.attachment .entry-content .nav-previous a:before {
+    content: '\2190\00a0';
+}
+.attachment .entry-content .nav-next a:after {
+    content: '\00a0\2192';
+}

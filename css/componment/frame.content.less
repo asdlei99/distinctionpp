@@ -1,0 +1,100 @@
+/** Content **/
+@import "../common.less";
+
+#main {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#content {
+    margin-bottom: 36px;
+}
+
+.home .sticky {
+    border: 5px solid #09F;
+    width: @distincionpp_conf_content_inner_width;
+}
+
+.page-link {
+    clear: both;
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 22px;
+    word-spacing: 0.5em;
+}
+
+.page-link a:link, .page-link a:visited {
+    background: #09F;
+    .border-radius_s(5px);
+    color: #fff;
+    font-weight: normal;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+}
+.page-link a:hover, .page-link a:active {
+    background: #333;
+    color: #fff;
+}
+
+#entry-author-info {
+    background: #fff;
+    .border-radius_s(5px);
+    clear: both;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 24px 0 8px 0;
+    overflow: hidden;
+    width: @distincionpp_conf_content_body_width;
+}
+#entry-author-info #author-avatar {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    float: left;
+    height: 60px;
+    margin: 0 -104px 0 0;
+    padding: 11px;
+}
+#entry-author-info #author-description {
+    float: left;
+    margin: 0 0 0 104px;
+}
+#entry-author-info h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.entry-utility {
+    clear: both;
+    color: #888;
+    font-size: 12px;
+    line-height: 18px;
+}
+.entry-meta a,
+.entry-utility a {
+    color: #888;
+}
+.entry-meta a:hover,
+.entry-utility a:hover {
+    color: #ff4b33;
+}
+.term-lists {
+    background: url(images/comment-bg.png);
+    .border-radius_s(5px);
+    clear: both;
+    color: #333;
+    float:none;
+    font-size:12px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+}
+.entry-utility-prep {
+    font-weight:bold;
+}
+
+.tag-links, .cat-links {
+    display:block;
+    margin: 5px 0
+}
+#content .video-player {
+    padding: 0;
+}

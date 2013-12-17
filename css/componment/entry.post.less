@@ -1,0 +1,161 @@
+/** post **/
+@import "../common.less";
+
+.post .term-lists a {
+    color: #333;
+    text-decoration:underline;
+}
+
+/** post - single **/
+.single .post, .error404 .post {
+    margin: 0;
+    padding: 4px 3px 3px;
+    width: 100%;
+}
+
+.single .post-inner, .page .post-inner, .error404 .post-inner {
+    margin: 0;
+}
+
+
+.type-page {
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6) );
+    background: none repeat scroll 0 0 #f1f1f1;
+    .border-radius_s(5px);
+    color: #7B7D83;
+    padding: 4px 3px 3px;
+}
+
+.no-results {
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6) );
+    .border-radius_s(5px);
+    color: #7B7D83;
+    margin-top: 10px;
+    padding: 4px 3px 3px;
+}
+
+.search .type-page {
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6) );
+    background: none repeat scroll 0 0 #f1f1f1;
+    .border-radius_s(5px);
+    color: #7B7D83;
+    margin: 10px;
+    padding: 0;
+    width:430px;
+}
+
+.wrap {
+    width: 100%;
+    overflow:hidden;
+}
+
+.post_fliud_panel .post {
+    padding: 1px;
+}
+
+.post {
+    .box-shadow(0 0 8px rgba(0, 0, 0, 0.6) );
+    background: none repeat scroll 0 0 #f1f1f1;
+    .border-radius_s(5px);
+    color: #7B7D83;
+    margin: 10px;
+    width: 430px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post a {
+    color: #09F;
+    text-decoration:none;
+}
+
+
+.post-inner {
+    background: none repeat scroll 0 0 transparent;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    .border-radius_s(5px);
+    margin: 4px 3px 3px;
+    padding: 16px;
+    overflow:hidden;
+}
+
+.entry {
+    margin-bottom:10px;
+    font-family:@distincionpp_conf_font_family;
+}
+
+.title {
+    color:#333;
+    font-size:40px;
+    line-height:44px;
+    margin-bottom:15px;
+    word-wrap: break-word;
+}
+
+.single .title {
+    font-size:40px;
+    line-height:44px;
+
+}
+
+.title a {
+    color:#333;
+    text-decoration:none;
+}
+.title a:hover {
+    color:#09f;
+}
+
+
+.utility {
+    background:#ccc;
+    border:1px solid #666;
+    .border-radius_s(4px);
+    .box-shadow(inset 1px 1px 5px rgba(0, 0, 0, 0.3));
+    color:#000;
+    font-family: @distincionpp_conf_font_family;
+    font-size:12px;
+    font-weight: bold;
+    margin-bottom:5px;
+    overflow:hidden;
+    padding: 3px 8px;
+    text-shadow: 0px 0px 1px #000;
+}
+
+#content .utility img.alignleft {
+    margin:4px 8px 0 0;
+}
+
+.utility a {
+    color: #000;
+}
+
+.utility a:hover {
+    color: #09F;
+}
+
+.utility .format-icons {
+    line-height: 16px;
+    padding-left: 23px;
+    padding-bottom: 3px;
+    text-transform:capitalize;
+}
+
+.utility .icon-default {
+    background: url(images/icon-default.png) no-repeat;
+}
+
+.format-aside .utility .format-icons {
+    background: url(images/icon-aside.png) no-repeat;
+}
+
+.comments-link {
+    float:left;
+}
+
+.utility-date {
+    background:url(images/icon-clock.png) no-repeat 0 4px;
+    float:right;
+    padding-left:22px;
+}

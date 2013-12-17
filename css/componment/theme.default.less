@@ -1,0 +1,115 @@
+@import "../common.less";
+
+body {
+    line-height: 1;
+    background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
+    min-width: 936px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =Structure
+-------------------------------------------------------------- */
+
+/* The main theme structure */
+
+#main {
+    margin: 0 auto;
+    width: @distincionpp_conf_content_width;
+}
+
+#colophon {
+    margin: 0 auto;
+    width: @distincionpp_conf_content_width;
+}
+#wrapper {
+    clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+}
+
+/* Structure the footer area */
+#footer-widget-area {
+    overflow: hidden;
+}
+#footer-widget-area .widget-area {
+    float: left;
+    margin-right: 20px;
+    width: 220px;
+}
+#footer-widget-area #fourth {
+    margin-right: 0;
+}
+#site-info {
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+    width: 550px;
+}
+#site-generator {
+    float: right;
+    margin-right: 20px;
+    width: 320px;
+    text-align:right;
+}
+.page-title {
+    font-family: @distincionpp_conf_font_family;
+    font-size: 40px;
+}
+.page-title span{
+    text-transform:capitalize;
+}
+
+
+/* =Global Elements
+-------------------------------------------------------------- */
+
+/* Main global 'theme' and typographic styles */
+hr {
+    background-color: #e7e7e7;
+    border: 0;
+    clear: both;
+    height: 1px;
+    margin-bottom: 18px;
+}
+
+/* Text elements */
+blockquote {
+    background: url(images/blockquote.png) no-repeat 40px 6px;
+    font-style: italic;
+    min-height: 50px;
+    padding: 0 75px 0 100px;
+}
+blockquote blockquote{
+    padding: 0 0 0 100px;
+}
+blockquote cite,
+blockquote em,
+blockquote i {
+    font-style: normal;
+}
+q::before {
+	content: '"';
+}
+q::after {
+	content: '"';
+}
+a:link {
+    color: #09f;
+}
+a:visited {
+    color: #09f;
+}
+a:active,
+a:hover {
+    color: #F33;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+    position: absolute;
+    left: -9000px;
+}
