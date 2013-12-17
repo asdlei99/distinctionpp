@@ -146,7 +146,7 @@
 					// NOTE: list items are set to overflow:hidden. Long page titles will be cut off, but the full Page Title will display in the tooltip
 				}
 				if ( 'true' == $wp_distinctionpp_options['display_menu_search_form'] ) { // Enabled by default ?>
-				<li><div id="search-form" class="navbar-right"><?php get_search_form(); ?></div></li><?php
+				<li><div id="search-form" class="navbar-form"><?php get_search_form(); ?></div></li><?php
 				} ?></ul>
 	    </nav>
        <?php } ?>

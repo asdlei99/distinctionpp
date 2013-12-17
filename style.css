@@ -251,14 +251,17 @@ a:hover {
   padding: 15px 0;
 }
 /** Menu **/
+/* line 4, css\componment\frame.menu.less */
+#header-menu {
+  margin: 0 0 1px 0;
+}
 /** search **/
 /* line 4, css\componment\frame.search.less */
 #search-form {
-  height: 38px;
   width: 212px;
   padding: 3px;
 }
-/* line 9, css\componment\frame.search.less */
+/* line 8, css\componment\frame.search.less */
 #searchform #s {
   width: 160px;
 }
