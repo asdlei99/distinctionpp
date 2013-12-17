@@ -1,14 +1,14 @@
-/*
-Theme Name: distinctionpp
-Theme URI: https://git.oschina.net/owent/distinctionpp
-Description: distinctionpp is a themed geared at giving each piece of content a distinct look and feel. It is customizable with theme options, custom menus, backgrounds, and utilizes post formats to give content a little extra flare. distinctionpp supports six widgetized areas (two in the sidebar, four in the footer). It includes a variety of font options, stylesheets for print, special styles for post formats, and has an optional one-column page template that removes the sidebar.
-Author: James Laws / Kevin Stover
-Author URI: http://wpninjas.net, http://www.owent.net
-Version: 1.2
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-comments, sticky-post, theme-options, featured-images, post-formats, full-width-template, custom-menu, translation-ready, rtl-language-support, right-sidebar, left-sidebar
-*/
+/**
+ * Theme Name: distinctionpp
+ * Theme URI: https://git.oschina.net/owent/distinctionpp
+ * Description: distinctionpp is a themed geared at giving each piece of content a distinct look and feel. It is customizable with theme options, custom menus, backgrounds, and utilizes post formats to give content a little extra flare. distinctionpp supports six widgetized areas (two in the sidebar, four in the footer). It includes a variety of font options, stylesheets for print, special styles for post formats, and has an optional one-column page template that removes the sidebar.
+ * Author: James Laws / Kevin Stover
+ * Author URI: http://wpninjas.net, http://www.owent.net
+ * Version: 1.0
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: black, gray, blue, two-columns, fixed-width, custom-background, threaded-comments, sticky-post, theme-options, featured-images, post-formats, full-width-template, custom-menu, translation-ready, rtl-language-support, right-sidebar, left-sidebar
+ */
 
 
 /* =Reset default browser CSS. 
@@ -23,67 +23,8 @@ img {
     max-width: 100%;
 }
 
-/**
- * configure
- */
-
-@distincionpp_conf_content_width: 100%;
-@distincionpp_conf_content_inner_width: 80%;
-@distincionpp_conf_font_family: Arial, Helvetica, sans-serif;
-
-/**
- * common style
- */
-
-/* 公共圆角阴影样式 */
-.border-radius (@rest...) {
-    border-radius: @arguments;
-    -moz-border-radius: @arguments;
-    -khtml-border-radius: @arguments;
-    -webkit-border-radius: @arguments;
-}
-
-.border-radius_s (@radius: 5px) {
-    .border-radius(@radius);
-}
-
-
-.box-shadow (@rest...) {
-    box-shadow: @arguments;
-    -moz-box-shadow: @arguments;
-    -khtml-border-shadow: @arguments;
-    -webkit-box-shadow: @arguments;
-}
-
-.box-shadow_s (@h_shadow: 3px, @v_shadow: 3px, @blur: 5px, @color: #AAA) {
-    .box-shadow(@h_shadow, @v_shadow, @blur, @color);
-}
-
-/* 公共动画效果 */
-.transition(@rest...) {
-    -webkit-transition: @arguments;
-    -moz-transition: @arguments;
-    -ms-transition: @arguments;
-    -o-transition: @arguments;
-    transition: @arguments;
-}
-
-.transition_s(@time_sec: .2s, @func: ease-in-out) {
-    .transition(all, @time_sec, @func);
-}
-
-/* 公共覆盖式渐变效果 */
-.gradient-cover-white {
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background-color: White;
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 50%, rgba(255,255,255,255) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,255))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 50%,rgba(255,255,255,255) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 50%,rgba(255,255,255,255) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 50%,rgba(255,255,255,255) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 50%,rgba(255,255,255,255) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffffff',GradientType=0 ); /* IE6-8 */
-}
+@import "css/config.less";
+@import "css/common.less";
 
 /* =Layout
 -------------------------------------------------------------- 
