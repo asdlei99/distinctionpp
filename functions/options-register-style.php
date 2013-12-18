@@ -2,7 +2,6 @@
 /* Add Theme Settings Form Sections
 *******************************************************************************************/
 add_settings_section('wp_distinctionpp_settings_header_graphics', 'Header Graphics', 'wp_distinctionpp_settings_header_graphics_section_text', 'wp_distinctionpp');
-add_settings_section('wp_distinctionpp_settings_site_fonts', 'Custom Fonts', 'wp_distinctionpp_settings_site_fonts_section_text', 'wp_distinctionpp');
 
 /* Add Form Fields to Header Graphics Section
 *******************************************************************************************/
@@ -16,10 +15,6 @@ add_settings_field('wp_distinctionpp_setting_display_header_flames', 'Header Gra
 // Header Settings Section
 function wp_distinctionpp_settings_header_graphics_section_text() { ?>
 	<?php _e( '', 'wp_distinctionpp' ); ?>
-<?php }
-
-function wp_distinctionpp_settings_site_fonts_section_text() { ?>
-	<p><?php _e( 'Select the perfect font for your distinctionpp Theme. This will change the font for all the headers within your site. Refer to the contextual help screen for descriptions and help regarding each theme option.', 'wp_distinctionpp' ); ?></p>
 <?php }
 
 /*****************************************************************************************

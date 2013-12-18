@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 
         // 其他设置
         auto_width: true,         // 自动调整宽度使之填满整个panel(默认为false)
-        action_type: is_transition_enabled? "immediately": "animation"  // 变换类型,此处设为动画渐变（默认为immediately）
+        action_type: is_transition_enabled? "immediately": "animation"  // 变换类型,当浏览器支持CSS3时,使用CSS3动画
     });
     
     if (is_transition_enabled) {
