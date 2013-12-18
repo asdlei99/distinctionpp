@@ -1,13 +1,13 @@
 /// <reference path="jquery.min-vsdoc" />
 /**
-* jQuery SimpleFliud v 0.8
-* A dynamic layout plugin for jQuery
-* @Link http://www.owent.net
-* @Author OWenT
-*
-* Licensed under the MIT.
-* Copyright 2013 OWenT
-*/
+ * jQuery SimpleFliud v 0.8
+ * A dynamic layout plugin for jQuery
+ * @Link http://www.owent.net
+ * @Author OWenT
+ *
+ * Licensed under the MIT.
+ * Copyright 2013 OWenT
+ */
 
 
 /* 插件 -- 瀑布流 */
