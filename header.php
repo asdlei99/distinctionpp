@@ -11,7 +11,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
 <meta name="keywords" content='<?php echo get_the_tag_list(null, ','); ?>' />
 <meta name="description" content="<?php bloginfo('name'); ?>, <?php bloginfo('description'); wp_title(', ', true); ?>" />
 <meta name="author" content="<?php bloginfo('name'); ?>" />
