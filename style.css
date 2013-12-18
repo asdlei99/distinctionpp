@@ -262,10 +262,13 @@ a:hover {
   width: 212px;
   padding: 3px;
 }
-/* line 8, css\componment\frame.search.less */
+/* line 9, css\componment\frame.search.less */
+#searchform {
+  text-align: left;
+}
+/* line 13, css\componment\frame.search.less */
 #searchform #s {
   width: 160px;
-  text-align: left;
 }
 /** Content **/
 /* line 4, css\componment\frame.content.less */
