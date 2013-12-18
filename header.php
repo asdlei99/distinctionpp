@@ -46,16 +46,21 @@
 	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap.min.css?ver=3.0.3 );
 	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.0.3 );
 </style>
-<!--[if gte IE 9]><style type="text/css">
-		.gradient {
-			filter: none;
-		}
-</style><![endif]-->
 <!--[if lte IE 9]>	<style type="text/css">
-	.gradient-cover-white {
-		background-color: transparent;
-	}
-</style><![endif]-->
+.gradient-cover-white {
+	background-color: transparent;
+}
+</style><![endif]--><!--[if lt IE 9]>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.with_html5shiv.min.js?ver=2.7.1"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.min.js?ver=2.7.1"></script>
+<style type="text/css">
+.gradient {
+	filter: none;
+}
+</style>
+<!--<![endif]-->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
@@ -146,7 +151,7 @@
 					// NOTE: list items are set to overflow:hidden. Long page titles will be cut off, but the full Page Title will display in the tooltip
 				}
 				if ( 'true' == $wp_distinctionpp_options['display_menu_search_form'] ) { // Enabled by default ?>
-				<li><div id="search-form" class="navbar-form"><?php get_search_form(); ?></div></li><?php
+				<li><div id="search-form" class="navbar-form center-block"><?php get_search_form(); ?></div></li><?php
 				} ?></ul>
 	    </nav>
        <?php } ?>

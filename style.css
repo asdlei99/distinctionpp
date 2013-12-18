@@ -106,15 +106,16 @@ img {
 .page-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  margin: 0 0 0 40px;
 }
-/* line 62, css\componment\theme.default.less */
+/* line 63, css\componment\theme.default.less */
 .page-title span {
   text-transform: capitalize;
 }
 /* =Global Elements
 -------------------------------------------------------------- */
 /* Main global 'theme' and typographic styles */
-/* line 71, css\componment\theme.default.less */
+/* line 72, css\componment\theme.default.less */
 hr {
   background-color: #e7e7e7;
   border: 0;
@@ -123,46 +124,46 @@ hr {
   margin-bottom: 18px;
 }
 /* Text elements */
-/* line 80, css\componment\theme.default.less */
+/* line 81, css\componment\theme.default.less */
 blockquote {
   background: url(images/blockquote.png) no-repeat 40px 6px;
   font-style: italic;
   min-height: 50px;
   padding: 0 75px 0 100px;
 }
-/* line 86, css\componment\theme.default.less */
+/* line 87, css\componment\theme.default.less */
 blockquote blockquote {
   padding: 0 0 0 100px;
 }
-/* line 89, css\componment\theme.default.less */
+/* line 90, css\componment\theme.default.less */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
-/* line 94, css\componment\theme.default.less */
+/* line 95, css\componment\theme.default.less */
 q::before {
   content: '"';
 }
-/* line 97, css\componment\theme.default.less */
+/* line 98, css\componment\theme.default.less */
 q::after {
   content: '"';
 }
-/* line 100, css\componment\theme.default.less */
+/* line 101, css\componment\theme.default.less */
 a:link {
   color: #09f;
 }
-/* line 103, css\componment\theme.default.less */
+/* line 104, css\componment\theme.default.less */
 a:visited {
   color: #09f;
 }
-/* line 106, css\componment\theme.default.less */
+/* line 107, css\componment\theme.default.less */
 a:active,
 a:hover {
   color: #F33;
 }
 /* Text meant only for screen readers */
-/* line 112, css\componment\theme.default.less */
+/* line 113, css\componment\theme.default.less */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
@@ -264,6 +265,7 @@ a:hover {
 /* line 8, css\componment\frame.search.less */
 #searchform #s {
   width: 160px;
+  text-align: left;
 }
 /** Content **/
 /* line 4, css\componment\frame.content.less */
