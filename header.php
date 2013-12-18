@@ -130,7 +130,7 @@
 
       	</div><!-- #branding -->
        	<?php if ( 'below' == $wp_distinctionpp_options['header_menu_position'] ) { ?>
-	    <nav id="header-menu" class="navbar navbar-inverse navbar-right" role="navigation">
+       	<div id="header-menu-wrapper" class="navbar"><nav id="header-menu" class="navbar navbar-inverse navbar-right" role="navigation">
 	        <ul id="nav" class="nav navbar-nav text-center"><?php
 	        /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */
 				global $wp_distinctionpp_options;
@@ -154,7 +154,7 @@
 				if ( 'true' == $wp_distinctionpp_options['display_menu_search_form'] ) { // Enabled by default ?>
 				<li><div id="search-form" class="navbar-form center-block"><?php get_search_form(); ?></div></li><?php
 				} ?></ul>
-	    </nav>
+	    </nav></div>
        <?php } ?>
     </div><!-- #masthead -->
 

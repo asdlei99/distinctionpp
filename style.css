@@ -253,6 +253,7 @@ a:hover {
 }
 /** Menu **/
 /* line 4, css\componment\frame.menu.less */
+#header-menu-wrapper,
 #header-menu {
   margin: 0 0 1px 0;
 }
@@ -1459,7 +1460,7 @@ h3#reply-title {
 /** Pagination **/
 /* line 4, css\componment\widget.pagination.less */
 .pagination {
-  margin: 20px 40px;
+  margin: 20px 40px !important;
   text-align: center;
 }
 /* line 8, css\componment\widget.pagination.less */
