@@ -75,9 +75,7 @@
 </head>
 <?php global $wp_distinctionpp_options; ?>
 <body <?php body_class(); ?>>
-
-<div id="header">
-
+<header><div id="header">
     <div id="masthead">
     	<?php if ( 'above' == $wp_distinctionpp_options['header_menu_position'] ) { ?>
 	    <nav id="header-menu" class="navbar navbar-inverse navbar-right" role="navigation">
@@ -157,8 +155,7 @@
 	    </nav></div>
        <?php } ?>
     </div><!-- #masthead -->
-
-</div><!-- #header -->
+</div></header><!-- #header -->
 
 <div id="wrapper" class="hfeed">
 

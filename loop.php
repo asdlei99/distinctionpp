@@ -23,13 +23,13 @@
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 	<div class="post_fliud_panel"><div id="post-0" class="post error404 not-found">
-    	<div class="post-inner">
+    	<div class="post-inner"><article>
             <h1 class="title"><?php _e( 'Not Found', 'wp_distinctionpp' ); ?></h1>
             <div class="entry">
                 <p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'wp_distinctionpp' ); ?></p>
                 <?php get_search_form(); ?>
             </div><!-- .entry-content -->
-        </div>
+        </article></div>
 	</div></div><!-- #post-0 -->
 <?php endif; ?>
 
@@ -50,7 +50,7 @@
 <?php if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) ) ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
                     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -62,7 +62,7 @@
 
                     <?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -73,7 +73,7 @@
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
                     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -83,7 +83,7 @@
 
                      <?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -93,7 +93,7 @@
 <?php elseif ( ( function_exists( 'get_post_format' ) && 'link' == get_post_format( $post->ID ) ) ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
                     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -103,7 +103,7 @@
 
                 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -113,7 +113,7 @@
 <?php elseif ( ( function_exists( 'get_post_format' ) && 'audio' == get_post_format( $post->ID ) ) ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
                     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -123,7 +123,7 @@
 
                 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -133,7 +133,7 @@
 <?php elseif ( ( function_exists( 'get_post_format' ) && 'image' == get_post_format( $post->ID ) ) ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
       				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -143,7 +143,7 @@
 
                 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -153,7 +153,7 @@
 <?php elseif ( ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) || in_category( _x( 'gallery', 'gallery category slug', 'wp_distinctionpp' ) )  ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="post-inner">
+        <div class="post-inner"><article>
 
 			<div class="entry">
 
@@ -181,7 +181,7 @@
 
 				<?php get_template_part( 'post', 'utility' ); ?>
 
-        	</div><!-- .post-inner -->
+        </article></div><!-- .post-inner -->
 		</div></div><!-- #post-## -->
 
 <?php /* End GALLERY posts. */ ?>
@@ -191,7 +191,7 @@
 
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <div class="entry">
 
                     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_distinctionpp' ) ); ?>
@@ -201,7 +201,7 @@
 
                 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -212,7 +212,7 @@
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
 
                 <div class="entry">
 
@@ -223,7 +223,7 @@
 
                	 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 
 		</div></div><!-- #post-## -->
@@ -234,7 +234,7 @@
 <?php elseif ( ( function_exists( 'get_post_format' ) && 'chat' == get_post_format( $post->ID ) ) ) : ?>
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
             <h2 class="title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'wp_distinctionpp' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
                 <div class="entry">
 
@@ -245,7 +245,7 @@
 
                 	<?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 
@@ -255,7 +255,7 @@
 
 
 		<div class="post_fliud_panel"><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
                 <h2 class="title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'wp_distinctionpp' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
                 <div class="entry">
@@ -268,7 +268,7 @@
 
                      <?php get_template_part( 'post', 'utility' ); ?>
 
-				</div><!-- .post-inner -->
+			</article></div><!-- .post-inner -->
 
 		</div></div><!-- #post-## -->
 

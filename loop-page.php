@@ -16,9 +16,8 @@
 ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <div class="post-inner">
+                    <div class="post-inner"><article>
                         <?php if ( is_front_page() ) { ?>
 						<h2 class="title"><?php the_title(); ?></h2>
 						<?php } else { ?>
@@ -30,7 +29,7 @@
                             <?php edit_post_link( __( 'Edit', 'wp_distinctionpp' ), '<span class="edit-link">', '</span>' ); ?>
     
                         </div><!-- .entry -->
-                    </div>
+                    </article></div>
 				</div><!-- #post-## -->
 
 				<?php comments_template( '', true ); ?>

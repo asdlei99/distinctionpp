@@ -25,7 +25,7 @@
 				<?php endif; ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                	<div class="post-inner">
+                	<div class="post-inner"><article>
 					<h1 class="title"><?php the_title(); ?></h1>
 
 					<div class="entry">
@@ -69,7 +69,7 @@
 					</div><!-- .entry-content -->
 
 					<?php get_template_part( 'post', 'utility' ); ?>
-                	</div><!-- .post-inner -->
+                	</article></div><!-- .post-inner -->
 				</div><!-- #post-## -->
 <div id="nav-below" class="navigation">
 							<div class="nav-previous"><?php previous_image_link( false ); ?></div>

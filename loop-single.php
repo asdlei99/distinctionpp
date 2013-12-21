@@ -18,7 +18,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<div class="post-inner">
+        	<div class="post-inner"><article>
 <?php /* How to display VIDEO posts. */ ?>
 
 <?php if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) ) ) : ?>
@@ -187,7 +187,9 @@
                         </div>
 					</div><!-- #entry-author-info -->
 <?php endif; ?>           
-</div><!-- .post-inner -->    		</div><!-- #post-## -->           
+		</article>
+	</div><!-- .post-inner -->
+</div><!-- #post-## -->           
                 
 
 
