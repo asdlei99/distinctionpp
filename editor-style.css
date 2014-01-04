@@ -16,7 +16,6 @@ Used to style the TinyMCE editor.
 /* 公共圆角阴影样式 */
 /* 公共动画效果 */
 /* 公共覆盖式渐变效果 */
-/* line 49, css\common.less */
 .gradient-cover-white {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
@@ -43,7 +42,6 @@ Used to style the TinyMCE editor.
   /* IE6-8 */
 
 }
-/* line 9, editor-style.less */
 .wp-caption {
   border: none;
   background: #f1f1f1;
@@ -58,17 +56,14 @@ Used to style the TinyMCE editor.
   -khtml-border-radius: 0;
   -webkit-border-radius: 0;
 }
-/* line 21, editor-style.less */
 .wp-caption img {
   margin: 5px;
 }
-/* line 25, editor-style.less */
 .wp-caption p.wp-caption-text {
   margin: 0 0 4px;
 }
 /** ================= wp-style ================= **/
 /** wp-smiley **/
-/* line 2, css\componment\wpstyle.smiley.less */
 #content .wp-smiley {
   margin: 0;
 }

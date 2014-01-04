@@ -15,7 +15,6 @@
 /* 公共圆角阴影样式 */
 /* 公共动画效果 */
 /* 公共覆盖式渐变效果 */
-/* line 49, css\common.less */
 .gradient-cover-white {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
@@ -43,30 +42,25 @@
 
 }
 /** ================= theme config & style ================= **/
-/* line 3, css\componment\theme.default.less */
 body {
   line-height: 1;
   background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
   min-width: 936px;
 }
-/* line 9, css\componment\theme.default.less */
 img {
   max-width: 100%;
 }
 /* =Structure
 -------------------------------------------------------------- */
 /* The main theme structure */
-/* line 18, css\componment\theme.default.less */
 #main {
   margin: 0 auto;
   width: 100%;
 }
-/* line 23, css\componment\theme.default.less */
 #colophon {
   margin: 0 auto;
   width: 100%;
 }
-/* line 27, css\componment\theme.default.less */
 #wrapper {
   clear: both;
   margin: 0 auto;
@@ -74,48 +68,40 @@ img {
   width: 100%;
 }
 /* Structure the footer area */
-/* line 35, css\componment\theme.default.less */
 #footer-widget-area {
   overflow: hidden;
 }
-/* line 38, css\componment\theme.default.less */
 #footer-widget-area .widget-area {
   float: left;
   margin-right: 20px;
   width: 220px;
 }
-/* line 43, css\componment\theme.default.less */
 #footer-widget-area #fourth {
   margin-right: 0;
 }
-/* line 46, css\componment\theme.default.less */
 #site-info {
   float: left;
   font-size: 12px;
   margin-left: 20px;
   width: 550px;
 }
-/* line 52, css\componment\theme.default.less */
 #site-generator {
   float: right;
   margin-right: 20px;
   width: 320px;
   text-align: right;
 }
-/* line 58, css\componment\theme.default.less */
 .page-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   margin: 0 0 0 40px;
 }
-/* line 63, css\componment\theme.default.less */
 .page-title span {
   text-transform: capitalize;
 }
 /* =Global Elements
 -------------------------------------------------------------- */
 /* Main global 'theme' and typographic styles */
-/* line 72, css\componment\theme.default.less */
 hr {
   background-color: #e7e7e7;
   border: 0;
@@ -124,94 +110,76 @@ hr {
   margin-bottom: 18px;
 }
 /* Text elements */
-/* line 81, css\componment\theme.default.less */
 blockquote {
-  background: url(images/blockquote.png) no-repeat 40px 6px;
   font-style: italic;
   min-height: 50px;
   padding: 0 75px 0 100px;
 }
-/* line 87, css\componment\theme.default.less */
 blockquote blockquote {
   padding: 0 0 0 100px;
 }
-/* line 90, css\componment\theme.default.less */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
-/* line 95, css\componment\theme.default.less */
 q::before {
   content: '"';
 }
-/* line 98, css\componment\theme.default.less */
 q::after {
   content: '"';
 }
-/* line 101, css\componment\theme.default.less */
 a:link {
   color: #09f;
 }
-/* line 104, css\componment\theme.default.less */
 a:visited {
   color: #09f;
 }
-/* line 107, css\componment\theme.default.less */
 a:active,
 a:hover {
   color: #F33;
 }
 /* Text meant only for screen readers */
-/* line 113, css\componment\theme.default.less */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
 }
 /** ================= layout ================= **/
 /** Layout - common **/
-/* line 4, css\componment\layout.base.less */
 #container {
   float: left;
   margin: 0 -270px 0 0;
   width: 100%;
 }
-/* line 9, css\componment\layout.base.less */
 #content {
   margin: 0 280px 0 20px;
 }
-/* line 12, css\componment\layout.base.less */
 #footer {
   clear: both;
   width: 100%;
 }
 /** Layout - 1 **/
-/* line 4, css\componment\layout.1.less */
 .one-column #content {
   margin: 0 auto;
   width: 100%;
 }
 /** Layout - 2 **/
-/* line 2, css\componment\layout.2.less */
 #primary,
 #secondary {
   float: right;
   overflow: hidden;
   width: 250px;
 }
-/* line 8, css\componment\layout.2.less */
 #secondary {
   clear: right;
 }
 /** LAYOUT - Full width, no sidebar **/
-/* line 4, css\componment\layout.full.less */
 .single-attachment #content {
   margin: 0 auto;
   width: 100%;
 }
 /** ================= frame ================= **/
 /** Header **/
-/* line 4, css\componment\frame.header.less */
 #header {
   background: #333;
   border-bottom: 1px solid #000;
@@ -219,7 +187,6 @@ a:hover {
   margin: 0 auto;
   width: 100%;
 }
-/* line 11, css\componment\frame.header.less */
 #site-title {
   font-size: 55px;
   line-height: 55px;
@@ -227,14 +194,12 @@ a:hover {
   text-align: center;
   width: 100%;
 }
-/* line 18, css\componment\frame.header.less */
 #site-title a {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-shadow: #000 1px 1px 3px;
 }
-/* line 25, css\componment\frame.header.less */
 #site-description {
   clear: both;
   color: #ccc;
@@ -246,47 +211,38 @@ a:hover {
   text-shadow: #000 1px 1px 3px;
 }
 /* This is the custom header image */
-/* line 38, css\componment\frame.header.less */
 #branding {
   clear: both;
   padding: 15px 0;
 }
 /** Menu **/
-/* line 4, css\componment\frame.menu.less */
 #header-menu-wrapper,
 #header-menu {
   margin: 0 0 1px 0;
 }
 /** search **/
-/* line 4, css\componment\frame.search.less */
 #search-form {
   width: 212px;
   padding: 3px;
 }
-/* line 9, css\componment\frame.search.less */
 #searchform {
   text-align: left;
 }
-/* line 13, css\componment\frame.search.less */
 #searchform #s {
   width: 160px;
 }
 /** Content **/
-/* line 4, css\componment\frame.content.less */
 #main {
   overflow: hidden;
   padding-bottom: 20px;
 }
-/* line 8, css\componment\frame.content.less */
 #content {
   margin-bottom: 36px;
 }
-/* line 12, css\componment\frame.content.less */
 .home .sticky {
   border: 5px solid #09F;
   width: 80%;
 }
-/* line 17, css\componment\frame.content.less */
 .page-link {
   clear: both;
   color: #333;
@@ -294,7 +250,6 @@ a:hover {
   margin: 0 0 22px;
   word-spacing: 0.5em;
 }
-/* line 25, css\componment\frame.content.less */
 .page-link a:link,
 .page-link a:visited {
   background: #09F;
@@ -307,13 +262,11 @@ a:hover {
   padding: 0.5em 0.75em;
   text-decoration: none;
 }
-/* line 33, css\componment\frame.content.less */
 .page-link a:hover,
 .page-link a:active {
   background: #333;
   color: #fff;
 }
-/* line 38, css\componment\frame.content.less */
 #entry-author-info {
   background: #fff;
   border-radius: 5px;
@@ -327,7 +280,6 @@ a:hover {
   overflow: hidden;
   width: 100%;
 }
-/* line 48, css\componment\frame.content.less */
 #entry-author-info #author-avatar {
   background: #fff;
   border: 1px solid #e7e7e7;
@@ -336,36 +288,30 @@ a:hover {
   margin: 0 -104px 0 0;
   padding: 11px;
 }
-/* line 56, css\componment\frame.content.less */
 #entry-author-info #author-description {
   float: left;
   margin: 0 0 0 104px;
 }
-/* line 60, css\componment\frame.content.less */
 #entry-author-info h2 {
   color: #000;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 66, css\componment\frame.content.less */
 .entry-utility {
   clear: both;
   color: #888;
   font-size: 12px;
   line-height: 18px;
 }
-/* line 72, css\componment\frame.content.less */
 .entry-meta a,
 .entry-utility a {
   color: #888;
 }
-/* line 76, css\componment\frame.content.less */
 .entry-meta a:hover,
 .entry-utility a:hover {
   color: #ff4b33;
 }
-/* line 80, css\componment\frame.content.less */
 .term-lists {
   background: url(images/comment-bg.png);
   border-radius: 5px;
@@ -379,22 +325,18 @@ a:hover {
   margin-bottom: 10px;
   padding: 0 8px;
 }
-/* line 90, css\componment\frame.content.less */
 .entry-utility-prep {
   font-weight: bold;
 }
-/* line 94, css\componment\frame.content.less */
 .tag-links,
 .cat-links {
   display: block;
   margin: 5px 0;
 }
-/* line 98, css\componment\frame.content.less */
 #content .video-player {
   padding: 0;
 }
 /** Footer **/
-/* line 4, css\componment\frame.footer.less */
 #footer {
   background: #757575 url(images/footer-bg.jpg) repeat-x top left;
   border-top: 2px solid #000;
@@ -402,12 +344,10 @@ a:hover {
   margin: 0 auto;
   width: 100%;
 }
-/* line 10, css\componment\frame.footer.less */
 #colophon {
   overflow: hidden;
   padding: 0;
 }
-/* line 14, css\componment\frame.footer.less */
 #footer-meta {
   background: #222;
   margin: 5px 0 5px 0;
@@ -424,23 +364,19 @@ a:hover {
   padding: 0 5px;
   overflow: hidden;
 }
-/* line 24, css\componment\frame.footer.less */
 #site-info {
   font-weight: bold;
   color: #fff;
 }
-/* line 28, css\componment\frame.footer.less */
 #site-info a {
   color: #fff;
   text-decoration: none;
 }
-/* line 32, css\componment\frame.footer.less */
 #site-generator {
   font-size: 12px;
   font-style: italic;
   position: relative;
 }
-/* line 37, css\componment\frame.footer.less */
 #site-generator a.wp {
   background: url(images/wordpress.png) center left no-repeat;
   color: #09F;
@@ -450,7 +386,6 @@ a:hover {
   text-decoration: none;
   text-shadow: 0 1px 0 #999;
 }
-/* line 47, css\componment\frame.footer.less */
 #site-generator a.wptheme {
   color: #09F;
   display: inline-block;
@@ -459,22 +394,18 @@ a:hover {
   text-decoration: none;
   text-shadow: 0 1px 0 #999;
 }
-/* line 55, css\componment\frame.footer.less */
 #site-generator a:hover {
   text-decoration: underline;
 }
-/* line 58, css\componment\frame.footer.less */
 img#wpstats {
   display: block;
   margin: 0 auto 10px;
 }
 /** sidebar **/
-/* line 4, css\componment\frame.sidebar.less */
 #main .widget-area ul {
   margin-left: 0;
   padding: 0 20px 0 0;
 }
-/* line 8, css\componment\frame.sidebar.less */
 #main .widget-area ul ul {
   border: none;
   margin-left: 1.3em;
@@ -482,7 +413,6 @@ img#wpstats {
 }
 /** ================= entry ================= **/
 /** attachment **/
-/* line 4, css\componment\entry.attachment.less */
 #content .attachment img {
   /* single attachment images should be centered */
 
@@ -490,12 +420,10 @@ img#wpstats {
   max-width: 868px;
   margin: 0 auto;
 }
-/* line 10, css\componment\entry.attachment.less */
 .attachment-archive {
   margin-bottom: 20px;
 }
 /**TYPE-ATTACHMENT**/
-/* line 16, css\componment\entry.attachment.less */
 .type-attachment {
   background: #fff;
   color: #000;
@@ -504,11 +432,9 @@ img#wpstats {
   -khtml-border-radius: 0;
   -webkit-border-radius: 0;
 }
-/* line 22, css\componment\entry.attachment.less */
 .type-attachment .post-inner {
   border: 0;
 }
-/* line 26, css\componment\entry.attachment.less */
 .type-attachment .title {
   background: url(images/comment-bg.png);
   border-radius: 10px;
@@ -522,79 +448,63 @@ img#wpstats {
   margin: 10px 10px 20px 10px;
   padding: 0 5px;
 }
-/* line 37, css\componment\entry.attachment.less */
 .type-attachment .entry {
   overflow: hidden;
 }
-/* line 41, css\componment\entry.attachment.less */
 .entry-attachment {
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
-/* line 47, css\componment\entry.attachment.less */
 .entry-caption {
   text-align: center;
 }
 /* =Attachment pages
 -------------------------------------------------------------- */
-/* line 55, css\componment\entry.attachment.less */
 .attachment .entry-content .entry-caption {
   font-size: 140%;
   margin-top: 24px;
 }
-/* line 59, css\componment\entry.attachment.less */
 .attachment .entry-content .nav-previous a:before {
   content: '\2190\00a0';
 }
-/* line 62, css\componment\entry.attachment.less */
 .attachment .entry-content .nav-next a:after {
   content: '\00a0\2192';
 }
 /**Attachment pages**/
-/* line 70, css\componment\entry.attachment.less */
 .attachment .entry-content .entry-caption {
   font-size: 140%;
   margin-top: 24px;
 }
-/* line 74, css\componment\entry.attachment.less */
 .attachment .entry-content .nav-previous a:before {
   content: '\2190\00a0';
 }
-/* line 77, css\componment\entry.attachment.less */
 .attachment .entry-content .nav-next a:after {
   content: '\00a0\2192';
 }
 /** audio **/
-/* line 4, css\componment\entry.audio.less */
 .format-audio {
   background: #2c0378;
   color: #ccc;
 }
-/* line 9, css\componment\entry.audio.less */
 .format-audio .title {
   color: #fff;
 }
-/* line 13, css\componment\entry.audio.less */
 .format-audio .entry a {
   color: #fff;
   text-decoration: underline;
 }
-/* line 17, css\componment\entry.audio.less */
 .format-audio .entry a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 23, css\componment\entry.audio.less */
 .format-audio .post-inner {
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
-/* line 27, css\componment\entry.audio.less */
 .format-audio .utility .format-icons {
   background: url(images/icon-audio.png) no-repeat;
 }
 /** chat **/
-/* line 4, css\componment\entry.chat.less */
 .format-chat {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -602,135 +512,107 @@ img#wpstats {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   color: #7B7D83;
 }
-/* line 9, css\componment\entry.chat.less */
 .format-chat .title {
   color: #803826;
   text-decoration: none;
 }
-/* line 14, css\componment\entry.chat.less */
 .format-chat .title a {
   color: #803826;
   text-decoration: none;
 }
-/* line 19, css\componment\entry.chat.less */
 .format-chat .entry {
   color: #563822;
   margin-left: 50px;
 }
-/* line 24, css\componment\entry.chat.less */
 #content .format-chat .entry p {
   margin-bottom: 10px;
 }
-/* line 28, css\componment\entry.chat.less */
 .format-chat .entry strong {
   color: #803826;
 }
-/* line 32, css\componment\entry.chat.less */
 .format-chat .utility {
   background: #C79C7A;
   border: 1px solid #a78162;
 }
-/* line 37, css\componment\entry.chat.less */
 .format-chat .utility .format-icons {
   background: url(images/icon-chat.png) no-repeat;
 }
 /** gallery **/
-/* line 4, css\componment\entry.gallery.less */
 .gallery {
   margin: 10px auto 18px;
   padding-top: 10px;
 }
-/* line 8, css\componment\entry.gallery.less */
 #content .gallery .gallery-item {
   float: left;
   margin-top: 0;
   text-align: center;
   width: 33%;
 }
-/* line 14, css\componment\entry.gallery.less */
 #content .gallery img {
   border: 2px solid #cfcfcf;
 }
-/* line 17, css\componment\entry.gallery.less */
 #content .gallery .gallery-caption {
   color: #888;
   font-size: 12px;
   margin: 0 0 12px;
 }
-/* line 22, css\componment\entry.gallery.less */
 #content .gallery dl {
   margin: 0;
 }
-/* line 25, css\componment\entry.gallery.less */
 #content .gallery img {
   border: 10px solid #f1f1f1;
 }
-/* line 28, css\componment\entry.gallery.less */
 #content .gallery br + br {
   display: none;
 }
-/* line 33, css\componment\entry.gallery.less */
 .format-gallery {
   background: #000;
 }
-/* line 37, css\componment\entry.gallery.less */
 .format-gallery .post-inner {
   border: 0;
 }
-/* line 41, css\componment\entry.gallery.less */
 .format-gallery .title {
   color: #ccc;
   display: inline;
 }
-/* line 46, css\componment\entry.gallery.less */
 .format-gallery .title a {
   color: #ccc;
 }
-/* line 50, css\componment\entry.gallery.less */
 .gallery-thumb {
   float: left;
   margin-right: 5px;
   width: 170px;
 }
-/* line 56, css\componment\entry.gallery.less */
 .format-gallery .gallery-thumb img {
   border: 5px solid #ccc;
 }
-/* line 60, css\componment\entry.gallery.less */
 .gallery-details {
   float: left;
   width: 210px;
 }
-/* line 65, css\componment\entry.gallery.less */
 .format-gallery .entry {
   overflow: hidden;
 }
-/* line 69, css\componment\entry.gallery.less */
 .format-gallery .utility {
   border: 1px solid #777;
 }
-/* line 73, css\componment\entry.gallery.less */
 .format-gallery .utility .format-icons {
   background: url(images/icon-image.png) no-repeat;
 }
 /** Gallery listing **/
-/* line 79, css\componment\entry.gallery.less */
 .category-gallery .size-thumbnail img {
   border: 10px solid #f1f1f1;
   margin-bottom: 0;
 }
-/* line 83, css\componment\entry.gallery.less */
 .category-gallery .gallery-thumb {
   float: left;
   margin-right: 20px;
   margin-top: -4px;
 }
-/* line 88, css\componment\entry.gallery.less */
 .home #content .category-gallery .entry-utility {
   padding-top: 4px;
 }
 /** image **/
-/* line 4, css\componment\entry.image.less */
 .format-image {
   background: #fff;
   color: #000;
@@ -739,11 +621,9 @@ img#wpstats {
   -khtml-border-radius: 0;
   -webkit-border-radius: 0;
 }
-/* line 10, css\componment\entry.image.less */
 .format-image .post-inner {
   border: 0;
 }
-/* line 14, css\componment\entry.image.less */
 .format-image .title {
   background: url(images/comment-bg.png);
   border-radius: 10px;
@@ -757,81 +637,66 @@ img#wpstats {
   margin: 10px 10px 20px 10px;
   padding: 0 5px;
 }
-/* line 25, css\componment\entry.image.less */
 #content .format-image .wp-caption {
   max-width: 380px;
   margin: 0 auto;
 }
-/* line 30, css\componment\entry.image.less */
 #content .format-image .wp-caption img {
   max-width: 374px;
   height: auto;
   margin: 0 auto;
 }
-/* line 36, css\componment\entry.image.less */
 #content .format-image img {
   max-width: 380px;
   height: auto;
   margin: 0 auto;
 }
-/* line 42, css\componment\entry.image.less */
 .single #content .format-image .wp-caption {
   max-width: 558px;
   height: auto;
 }
-/* line 47, css\componment\entry.image.less */
 .single #content .format-image img {
   max-width: 550px;
   height: auto;
 }
-/* line 52, css\componment\entry.image.less */
 .format-image .utility .format-icons {
   background: url(images/icon-image.png) no-repeat;
 }
-/* line 56, css\componment\entry.image.less */
 .format-image .entry {
   overflow: hidden;
   text-align: center;
 }
 /** link **/
-/* line 4, css\componment\entry.link.less */
 .format-link {
   background: #333;
   color: #ccc;
 }
-/* line 9, css\componment\entry.link.less */
 .format-link .entry a {
   color: #09F;
 }
-/* line 14, css\componment\entry.link.less */
 .format-link .post-inner {
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
-/* line 18, css\componment\entry.link.less */
 .format-link .utility .format-icons {
   background: url(images/icon-link.png) no-repeat;
 }
 /** post **/
-/* line 4, css\componment\entry.post.less */
 .post .term-lists a {
   color: #333;
   text-decoration: underline;
 }
 /** post - single **/
-/* line 10, css\componment\entry.post.less */
 .single .post,
 .error404 .post {
   margin: 0;
   padding: 4px 3px 3px;
   width: 100%;
 }
-/* line 16, css\componment\entry.post.less */
 .single .post-inner,
 .page .post-inner,
 .error404 .post-inner {
   margin: 0;
 }
-/* line 21, css\componment\entry.post.less */
 .type-page {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -845,7 +710,6 @@ img#wpstats {
   color: #7B7D83;
   padding: 4px 3px 3px;
 }
-/* line 29, css\componment\entry.post.less */
 .no-results {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -859,7 +723,6 @@ img#wpstats {
   margin-top: 10px;
   padding: 4px 3px 3px;
 }
-/* line 37, css\componment\entry.post.less */
 .search .type-page {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -875,16 +738,14 @@ img#wpstats {
   padding: 0;
   width: 430px;
 }
-/* line 47, css\componment\entry.post.less */
 .wrap {
   width: 100%;
   overflow: hidden;
 }
-/* line 52, css\componment\entry.post.less */
 .post_fliud_panel .post {
   padding: 1px;
+  color: #7B7D83;
 }
-/* line 56, css\componment\entry.post.less */
 .post {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -895,19 +756,16 @@ img#wpstats {
   -moz-border-radius: 5px;
   -khtml-border-radius: 5px;
   -webkit-border-radius: 5px;
-  color: #7B7D83;
   margin: 10px;
   width: 430px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 68, css\componment\entry.post.less */
 .post a {
   color: #09F;
   text-decoration: none;
 }
-/* line 74, css\componment\entry.post.less */
 .post-inner {
   background: none repeat scroll 0 0 transparent;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -919,12 +777,10 @@ img#wpstats {
   padding: 16px;
   overflow: hidden;
 }
-/* line 83, css\componment\entry.post.less */
 .entry {
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* line 88, css\componment\entry.post.less */
 .title {
   color: #333;
   font-size: 40px;
@@ -932,21 +788,17 @@ img#wpstats {
   margin-bottom: 15px;
   word-wrap: break-word;
 }
-/* line 96, css\componment\entry.post.less */
 .single .title {
   font-size: 40px;
   line-height: 44px;
 }
-/* line 102, css\componment\entry.post.less */
 .title a {
   color: #333;
   text-decoration: none;
 }
-/* line 106, css\componment\entry.post.less */
 .title a:hover {
   color: #09f;
 }
-/* line 111, css\componment\entry.post.less */
 .utility {
   background: #ccc;
   border: 1px solid #666;
@@ -967,54 +819,43 @@ img#wpstats {
   padding: 3px 8px;
   text-shadow: 0px 0px 1px #000;
 }
-/* line 126, css\componment\entry.post.less */
 #content .utility img.alignleft {
   margin: 4px 8px 0 0;
 }
-/* line 130, css\componment\entry.post.less */
 .utility a {
   color: #000;
 }
-/* line 134, css\componment\entry.post.less */
 .utility a:hover {
   color: #09F;
 }
-/* line 138, css\componment\entry.post.less */
 .utility .format-icons {
   line-height: 16px;
   padding-left: 23px;
   padding-bottom: 3px;
   text-transform: capitalize;
 }
-/* line 145, css\componment\entry.post.less */
 .utility .icon-default {
   background: url(images/icon-default.png) no-repeat;
 }
-/* line 149, css\componment\entry.post.less */
 .format-aside .utility .format-icons {
   background: url(images/icon-aside.png) no-repeat;
 }
-/* line 153, css\componment\entry.post.less */
 .comments-link {
   float: left;
 }
-/* line 157, css\componment\entry.post.less */
 .utility-date {
   background: url(images/icon-clock.png) no-repeat 0 4px;
   float: right;
   padding-left: 22px;
 }
 /** quote **/
-/* line 4, css\componment\entry.quote.less */
 .format-quote {
   background: url(images/quote-bg.jpg);
   color: #fff;
 }
-/* line 9, css\componment\entry.quote.less */
 .format-quote .post-inner {
   border: 3px solid rgba(0, 0, 0, 0.6);
 }
-/* line 13, css\componment\entry.quote.less */
 .format-quote blockquote {
   background: none;
   font-family: Georgia, "Bitstream Charter", serif;
@@ -1023,7 +864,6 @@ img#wpstats {
   margin: 0;
   padding: 0;
 }
-/* line 22, css\componment\entry.quote.less */
 .format-quote cite {
   color: #fff;
   display: block;
@@ -1035,71 +875,57 @@ img#wpstats {
   padding: 0;
   text-align: right;
 }
-/* line 33, css\componment\entry.quote.less */
 .format-quote cite a {
   border-bottom: 1px dotted #fff;
   color: #fff;
 }
-/* line 38, css\componment\entry.quote.less */
 #content .format-quote blockquote p {
   line-height: 38px;
   margin: 0;
   padding: 0;
 }
-/* line 44, css\componment\entry.quote.less */
 .format-quote .utility {
   background: #fcadc0;
   border: 1px solid #8d213a;
 }
-/* line 49, css\componment\entry.quote.less */
 .format-quote .utility .format-icons {
   background: url(images/icon-quote.png) no-repeat;
 }
 /** status **/
-/* line 4, css\componment\entry.status.less */
 .format-status {
   background: #09F;
   color: #fff;
 }
-/* line 9, css\componment\entry.status.less */
 .format-status .entry a {
   color: #c7dffd;
   text-decoration: underline;
 }
-/* line 14, css\componment\entry.status.less */
 .format-status .utility {
   background: #8cd1ff;
   border: 1px solid #018ce9;
 }
-/* line 18, css\componment\entry.status.less */
 .format-status .post-inner {
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
-/* line 22, css\componment\entry.status.less */
 .format-status .utility .format-icons {
   background: url(images/icon-status.png) no-repeat;
 }
 /** video **/
-/* line 4, css\componment\entry.video.less */
 .format-video {
   background: url(images/video-bg.jpg);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* line 10, css\componment\entry.video.less */
 .format-video .post-inner {
   border: 3px solid rgba(0, 0, 0, 0.6);
 }
-/* line 14, css\componment\entry.video.less */
 .format-video .post-inner .entry a {
   color: #fff;
   text-decoration: underline;
 }
-/* line 20, css\componment\entry.video.less */
 .format-video .post-inner .entry a:hover {
   text-decoration: none;
 }
-/* line 24, css\componment\entry.video.less */
 .format-video blockquote {
   font-family: Georgia, "Bitstream Charter", serif;
   font-size: 26px;
@@ -1107,7 +933,6 @@ img#wpstats {
   margin: 0;
   padding: 0;
 }
-/* line 32, css\componment\entry.video.less */
 .format-video iframe {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -1115,7 +940,6 @@ img#wpstats {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   border: 2px solid #474e07;
 }
-/* line 37, css\componment\entry.video.less */
 .format-video .title {
   background: #474e07;
   border-radius: 10px;
@@ -1130,18 +954,15 @@ img#wpstats {
   padding: 3px 8px;
   text-shadow: 0px 1px 1px #000;
 }
-/* line 49, css\componment\entry.video.less */
 .format-video .utility {
   background: #cac89c;
   border: 1px solid #292d06;
 }
-/* line 54, css\componment\entry.video.less */
 .format-video .utility .format-icons {
   background: url(images/icon-video.png) no-repeat;
 }
 /** ================= widget ================= **/
 /** Comments **/
-/* line 4, css\componment\widget.comments.less */
 #comments {
   clear: both;
   margin: 20px 0 0 0;
@@ -1160,12 +981,10 @@ img#wpstats {
   color: #333;
   padding: 10px 15px 15px 15px;
 }
-/* line 17, css\componment\widget.comments.less */
 #comments .navigation {
   margin-bottom: 20px;
   padding: 10px;
 }
-/* line 21, css\componment\widget.comments.less */
 h3#comments-title,
 h3#reply-title {
   color: #000;
@@ -1173,16 +992,13 @@ h3#reply-title {
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 28, css\componment\widget.comments.less */
 h3#comments-title {
   font-size: 24px;
 }
-/* line 31, css\componment\widget.comments.less */
 .commentlist {
   list-style: none;
   margin: 30px 0;
 }
-/* line 35, css\componment\widget.comments.less */
 .commentlist li.comment {
   border-bottom: 1px solid #555;
   line-height: 24px;
@@ -1190,109 +1006,88 @@ h3#comments-title {
   padding: 0 10px 0 56px;
   position: relative;
 }
-/* line 42, css\componment\widget.comments.less */
 .commentlist li:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-/* line 46, css\componment\widget.comments.less */
 #comments .comment-body ul,
 #comments .comment-body ol {
   margin-bottom: 18px;
 }
-/* line 50, css\componment\widget.comments.less */
 #comments .comment-body p:last-child {
   margin-bottom: 6px;
 }
-/* line 53, css\componment\widget.comments.less */
 #comments .comment-body blockquote p:last-child {
   margin-bottom: 24px;
 }
-/* line 56, css\componment\widget.comments.less */
 .commentlist ol {
   list-style: decimal;
 }
-/* line 59, css\componment\widget.comments.less */
 .commentlist .avatar {
   position: absolute;
   top: 4px;
   left: 4px;
 }
-/* line 66, css\componment\widget.comments.less */
 .comment-author cite {
   color: #000;
   font-style: normal;
   font-weight: bold;
 }
-/* line 71, css\componment\widget.comments.less */
 .comment-author .says {
   font-style: italic;
 }
-/* line 74, css\componment\widget.comments.less */
 .comment-meta {
   font-size: 12px;
   margin: 0 0 18px 0;
 }
-/* line 78, css\componment\widget.comments.less */
 #comments a:link,
 #comments a:visited {
   color: #333;
   text-decoration: underline;
 }
-/* line 83, css\componment\widget.comments.less */
 #comments a:active,
 #comments a:hover {
   color: #F33;
   text-decoration: none;
 }
-/* line 90, css\componment\widget.comments.less */
 .commentlist .bypostauthor {
   background: #fff;
   padding-left: 10px;
 }
-/* line 94, css\componment\widget.comments.less */
 .reply {
   font-size: 12px;
   padding: 0 0 24px 0;
 }
-/* line 101, css\componment\widget.comments.less */
 .reply a:hover,
 a.comment-edit-link:hover {
   color: #F33;
 }
-/* line 105, css\componment\widget.comments.less */
 .commentlist .children {
   list-style: none;
   margin: 0;
 }
-/* line 109, css\componment\widget.comments.less */
 .commentlist .children li {
   border: none;
   margin: 0;
 }
-/* line 113, css\componment\widget.comments.less */
 .nopassword,
 .page .nocomments {
   display: none;
   margin: 0;
   line-height: 16px;
 }
-/* line 119, css\componment\widget.comments.less */
 .nocomments {
   margin: 0;
   line-height: 16px;
 }
-/* line 123, css\componment\widget.comments.less */
 #comments .pingback {
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 18px;
   width: 100%;
 }
-/* line 128, css\componment\widget.comments.less */
 .commentlist li.comment + li.pingback {
   margin-top: -6px;
 }
-/* line 131, css\componment\widget.comments.less */
 #comments .pingback p {
   color: #888;
   display: block;
@@ -1300,17 +1095,14 @@ a.comment-edit-link:hover {
   line-height: 18px;
   margin: 0;
 }
-/* line 138, css\componment\widget.comments.less */
 #comments .pingback .url {
   font-size: 13px;
   font-style: italic;
 }
 /* Comments form */
-/* line 144, css\componment\widget.comments.less */
 input[type=submit] {
   color: #333;
 }
-/* line 147, css\componment\widget.comments.less */
 #respond {
   overflow: hidden;
   position: relative;
@@ -1324,88 +1116,69 @@ input[type=submit] {
   margin: -16px;
   padding: 10px 15px 15px 15px;
 }
-/* line 157, css\componment\widget.comments.less */
 #respond p {
   margin: 0;
 }
-/* line 160, css\componment\widget.comments.less */
 #respond a {
   color: #CCC;
 }
-/* line 163, css\componment\widget.comments.less */
 #respond a:hover {
   text-decoration: none;
 }
-/* line 166, css\componment\widget.comments.less */
 #respond .comment-notes {
   margin-bottom: 1em;
 }
-/* line 169, css\componment\widget.comments.less */
 .form-allowed-tags {
   line-height: 1em;
 }
-/* line 172, css\componment\widget.comments.less */
 .children #respond {
   margin: 0;
 }
-/* line 175, css\componment\widget.comments.less */
 h3#reply-title {
   font-size: 36px;
 }
-/* line 178, css\componment\widget.comments.less */
 #comments-list #respond {
   margin: 0 0 18px 0;
 }
-/* line 181, css\componment\widget.comments.less */
 #comments-list ul #respond {
   margin: 0;
 }
-/* line 184, css\componment\widget.comments.less */
 #cancel-comment-reply-link {
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
 }
-/* line 189, css\componment\widget.comments.less */
 #respond .required {
   color: #ff4b33;
   font-weight: bold;
 }
-/* line 193, css\componment\widget.comments.less */
 #respond label {
   color: #fff;
   font-size: 12px;
 }
-/* line 197, css\componment\widget.comments.less */
 #respond input {
   margin: 0 0 9px;
   width: 98%;
 }
-/* line 201, css\componment\widget.comments.less */
 #respond textarea {
   width: 98%;
 }
-/* line 204, css\componment\widget.comments.less */
 #respond .form-allowed-tags {
   color: #fff;
   font-size: 12px;
   line-height: 18px;
 }
-/* line 209, css\componment\widget.comments.less */
 #respond .form-allowed-tags code {
   font-size: 11px;
 }
-/* line 212, css\componment\widget.comments.less */
 #respond .form-submit {
   margin: 12px 0;
 }
-/* line 215, css\componment\widget.comments.less */
 #respond .form-submit input {
   font-size: 14px;
   width: auto;
 }
 /** Navigation **/
-/* line 4, css\componment\widget.navigation.less */
 .navigation {
   background: #222;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -1422,48 +1195,39 @@ h3#reply-title {
   overflow: hidden;
   padding: 10px;
 }
-/* line 14, css\componment\widget.navigation.less */
 .navigation a:link,
 .navigation a:visited {
   color: #fff;
   text-decoration: none;
 }
-/* line 19, css\componment\widget.navigation.less */
 .navigation a:active,
 .navigation a:hover {
   color: #f1f1f1;
 }
-/* line 23, css\componment\widget.navigation.less */
 .nav-previous {
   float: left;
   width: 40%;
 }
-/* line 27, css\componment\widget.navigation.less */
 .nav-next {
   float: right;
   text-align: right;
   width: 40%;
 }
-/* line 32, css\componment\widget.navigation.less */
 #nav-above {
   margin: 0 0 18px 0;
 }
-/* line 35, css\componment\widget.navigation.less */
 .paged #nav-above,
 .single #nav-above {
   display: block;
 }
-/* line 39, css\componment\widget.navigation.less */
 #nav-below {
   margin: 18px 0 0 0;
 }
 /** Pagination **/
-/* line 4, css\componment\widget.pagination.less */
 .pagination {
   margin: 20px 40px !important;
   text-align: center;
 }
-/* line 8, css\componment\widget.pagination.less */
 .pagination a,
 .pagination .current {
   background: #333;
@@ -1484,47 +1248,38 @@ h3#reply-title {
   text-align: center;
   text-decoration: none;
 }
-/* line 21, css\componment\widget.pagination.less */
 .pagination a:hover {
   background: #09F;
   color: #fff;
 }
-/* line 23, css\componment\widget.pagination.less */
 .pagination .current {
   background: #f1f1f1;
   color: #333;
 }
 /** Widget Areas **/
-/* line 4, css\componment\widget.widget-area.less */
 .widget-area ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 8, css\componment\widget.widget-area.less */
 .widget-area li {
   margin-bottom: 10px;
 }
-/* line 11, css\componment\widget.widget-area.less */
 .widget-area li li {
   line-height: 18px;
   margin-bottom: 5px;
 }
-/* line 15, css\componment\widget.widget-area.less */
 .widget-area ul ul {
   list-style: square;
   margin-left: 1.3em;
 }
-/* line 19, css\componment\widget.widget-area.less */
 .widget_search #s {
   /* This keeps the search inputs in line */
 
   width: 55%;
 }
-/* line 22, css\componment\widget.widget-area.less */
 .widget_search label {
   display: none;
 }
-/* line 25, css\componment\widget.widget-area.less */
 .widget-container {
   background: url(images/widget-bg.png);
   margin: 0;
@@ -1540,7 +1295,6 @@ h3#reply-title {
   color: #fff;
   padding: 10px 15px 15px 15px;
 }
-/* line 34, css\componment\widget.widget-area.less */
 #footer-widget-area .widget-container {
   background: url(images/widget-bg.png);
   margin: 0 0 18px 0;
@@ -1557,7 +1311,6 @@ h3#reply-title {
   margin-top: -2px;
   padding: 2px 15px 15px;
 }
-/* line 44, css\componment\widget.widget-area.less */
 .widget-title {
   border-bottom: 1px solid #ccc;
   color: #fff;
@@ -1569,7 +1322,6 @@ h3#reply-title {
   margin-bottom: 10px;
   padding: 3px 0 6px;
 }
-/* line 55, css\componment\widget.widget-area.less */
 #footer-widget-area .widget-title {
   border-bottom: 0 solid #ccc;
   color: #fff;
@@ -1577,38 +1329,31 @@ h3#reply-title {
   margin-bottom: 10px;
   padding-bottom: 2px;
 }
-/* line 62, css\componment\widget.widget-area.less */
 .widget-area a:link,
 .widget-area a:visited {
   color: #ccc;
   text-decoration: none;
 }
-/* line 67, css\componment\widget.widget-area.less */
 .widget-area a:active,
 .widget-area a:hover {
   color: #fff;
   text-decoration: underline;
 }
-/* line 72, css\componment\widget.widget-area.less */
 .widget-area .entry-meta {
   font-size: 11px;
 }
-/* line 76, css\componment\widget.widget-area.less */
 .widget_rss a.rsswidget {
   color: #000;
 }
-/* line 79, css\componment\widget.widget-area.less */
 .widget_rss a.rsswidget:hover {
   color: #ff4b33;
 }
-/* line 82, css\componment\widget.widget-area.less */
 .widget_rss .widget-title img {
   width: 11px;
   height: 11px;
 }
 /** ================= wp-style ================= **/
 /** wp-caption **/
-/* line 2, css\componment\wpstyle.caption.less */
 #content .wp-caption {
   background: #fff;
   line-height: 18px;
@@ -1616,28 +1361,23 @@ h3#reply-title {
   padding: 4px;
   text-align: center;
 }
-/* line 9, css\componment\wpstyle.caption.less */
 #content .wp-caption img {
   margin: 5px 5px 0;
 }
-/* line 12, css\componment\wpstyle.caption.less */
 #content .wp-caption p.wp-caption-text {
   color: #888;
   font-size: 12px;
   margin: 5px;
 }
 /** wp-smiley **/
-/* line 2, css\componment\wpstyle.smiley.less */
 #content .wp-smiley {
   margin: 0;
 }
 /** wp-calendar **/
-/* line 2, css\componment\wpstyle.calendar.less */
 #wp-calendar {
   width: 100%;
   font-size: 11px;
 }
-/* line 6, css\componment\wpstyle.calendar.less */
 #wp-calendar caption {
   color: #fff;
   font-size: 14px;
@@ -1645,58 +1385,47 @@ h3#reply-title {
   padding-bottom: 4px;
   text-align: left;
 }
-/* line 13, css\componment\wpstyle.calendar.less */
 #wp-calendar tr td {
   background: #ccc;
   padding: 4px;
 }
-/* line 17, css\componment\wpstyle.calendar.less */
 #wp-calendar tr td a {
   color: #09F;
 }
-/* line 20, css\componment\wpstyle.calendar.less */
 #wp-calendar thead {
   font-size: 11px;
 }
-/* line 23, css\componment\wpstyle.calendar.less */
 #wp-calendar thead th {
   background: #ccc;
   padding: 4px;
   text-align: center;
 }
-/* line 28, css\componment\wpstyle.calendar.less */
 #wp-calendar tbody {
   color: #aaa;
 }
-/* line 31, css\componment\wpstyle.calendar.less */
 #wp-calendar tbody td {
   background: #f5f5f5;
   border: 1px solid #fff;
   padding: 4px;
   text-align: center;
 }
-/* line 37, css\componment\wpstyle.calendar.less */
 #wp-calendar tbody .pad {
   background: #ccc;
 }
-/* line 40, css\componment\wpstyle.calendar.less */
 #wp-calendar tfoot #next {
   text-align: right;
 }
 /** wp-tag-cloud **/
-/* line 2, css\componment\wpstyle.tagcloud.less */
 #wp_tag_cloud div {
   line-height: 1.6em;
 }
 /** ================= pages ================= **/
 /** 404页样式 **/
-/* line 4, css\componment\page.404.less */
 .not_found_item {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 10, css\componment\page.404.less */
 .not_found_item p:first-child {
   text-align: center;
   font-family: cursive;
@@ -1706,7 +1435,6 @@ h3#reply-title {
   letter-spacing: 5px;
   color: #fff;
 }
-/* line 20, css\componment\page.404.less */
 .not_found_item p:first-child span {
   cursor: pointer;
   text-shadow: 0px 0px 2px #686868, 0px 1px 1px #dddddd, 0px 2px 1px #d6d6d6, 0px 3px 1px #cccccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbbbbb, 0px 7px 1px #777777, 0px 8px 3px rgba(100, 100, 100, 0.4), 0px 9px 5px rgba(100, 100, 100, 0.1), 0px 10px 7px rgba(100, 100, 100, 0.15), 0px 11px 9px rgba(100, 100, 100, 0.2), 0px 12px 11px rgba(100, 100, 100, 0.25), 0px 13px 15px rgba(100, 100, 100, 0.3);
@@ -1716,7 +1444,6 @@ h3#reply-title {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-/* line 39, css\componment\page.404.less */
 .not_found_item p:first-child span:hover {
   text-shadow: 0px 0px 2px #686868,
     0px 1px 1px #fff,
@@ -1738,7 +1465,6 @@ h3#reply-title {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-/* line 57, css\componment\page.404.less */
 .not_found_item p:not(:first-child) {
   text-align: center;
   color: #666;
@@ -1753,12 +1479,10 @@ h3#reply-title {
 /* =Print Style
 -------------------------------------------------------------- */
 @media print {
-  /* line 7, css\componment\spec.print.less */
   body {
     background: none !important;
     color: #000 !important;
   }
-  /* line 11, css\componment\spec.print.less */
   #wrapper {
     clear: both !important;
     display: block !important;
@@ -1768,7 +1492,6 @@ h3#reply-title {
     position: relative !important;
     width: 100%;
   }
-  /* line 20, css\componment\spec.print.less */
   #wrapper #container div.post[style],
   #wrapper #container .type-page,
   #wrapper #container .post {
@@ -1788,7 +1511,6 @@ h3#reply-title {
     left: auto !important;
     width: 99% !important;
   }
-  /* line 34, css\componment\spec.print.less */
   #footer,
   #colophon,
   #footer-meta,
@@ -1806,44 +1528,36 @@ h3#reply-title {
     overflow: hidden !important;
     width: 99% !important;
   }
-  /* line 45, css\componment\spec.print.less */
   #wrapper .post .post-inner,
   #wrapper .type-page .post-inner {
     border: 0 !important;
     padding: 0 !important;
   }
-  /* line 49, css\componment\spec.print.less */
   #wrapper .post .post-inner a {
     border: 0 !important;
     content: " (" attr(href) ") " !important;
     padding: 0 !important;
   }
-  /* line 54, css\componment\spec.print.less */
   #wrapper #container .post .post-inner .title {
     color: #000 !important;
     font-family: Arial, Helvetica, sans-serif !important;
   }
-  /* line 58, css\componment\spec.print.less */
   #wrapper .post .post-inner .utility {
     background: #fff !important;
     border: 0 !important;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
   }
-  /* line 63, css\componment\spec.print.less */
   #wrapper .post .post-inner .utility a {
     color: #000 !important;
     content: " (" attr(href) ") ";
   }
-  /* line 67, css\componment\spec.print.less */
   #header {
     border-bottom: 2pt solid #000;
     padding-bottom: 18pt;
   }
-  /* line 71, css\componment\spec.print.less */
   #colophon {
     border-top: 2pt solid #000;
   }
-  /* line 74, css\componment\spec.print.less */
   #site-title a,
   #site-description {
     color: #333 !important;
@@ -1854,20 +1568,16 @@ h3#reply-title {
     margin: 0;
     padding: 0;
   }
-  /* line 84, css\componment\spec.print.less */
   #site-title a {
     color: #333;
   }
-  /* line 87, css\componment\spec.print.less */
   .entry {
     font-size: 14pt;
     line-height: 1.6em;
   }
-  /* line 91, css\componment\spec.print.less */
   .title {
     font-size: 21pt;
   }
-  /* line 94, css\componment\spec.print.less */
   #access,
   #branding img,
   #respond,
@@ -1880,7 +1590,6 @@ h3#reply-title {
   #header-menu {
     display: none !important;
   }
-  /* line 106, css\componment\spec.print.less */
   #container,
   #header,
   #footer {
@@ -1888,49 +1597,39 @@ h3#reply-title {
     margin: 0 0 0 0;
     width: 100%;
   }
-  /* line 113, css\componment\spec.print.less */
   #content,
   .one-column #content {
     margin: 24pt 0 0;
     width: 100%;
   }
-  /* line 118, css\componment\spec.print.less */
   .wp-caption p {
     font-size: 11pt;
   }
-  /* line 121, css\componment\spec.print.less */
   #site-info,
   #site-generator {
     color: #333;
     float: none;
     width: auto;
   }
-  /* line 127, css\componment\spec.print.less */
   #colophon {
     width: auto;
   }
-  /* line 130, css\componment\spec.print.less */
   img#wpstats {
     display: none;
   }
-  /* line 133, css\componment\spec.print.less */
   #site-generator a {
     margin: 0;
     padding: 0;
   }
-  /* line 137, css\componment\spec.print.less */
   #entry-author-info {
     border: 1px solid #e7e7e7;
   }
-  /* line 140, css\componment\spec.print.less */
   #main {
     display: inline;
   }
-  /* line 143, css\componment\spec.print.less */
   .home .sticky {
     border: none;
   }
-  /* line 146, css\componment\spec.print.less */
   .col {
     display: inline;
     float: left;
@@ -1938,7 +1637,6 @@ h3#reply-title {
     margin-right: 40px;
     position: relative;
   }
-  /* line 153, css\componment\spec.print.less */
   .lst {
     clear: right;
     margin-right: 0 !important;
