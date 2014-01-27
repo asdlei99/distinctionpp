@@ -43,9 +43,9 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <style type="text/css" media="screen">
-	@import url( <?php bloginfo('stylesheet_url'); ?> );
 	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap.min.css?ver=3.0.3 );
 	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.0.3 );
+	@import url( <?php bloginfo('stylesheet_url'); ?> );
 </style>
 <!--[if lte IE 9]>	<style type="text/css">
 .gradient-cover-white {
