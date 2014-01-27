@@ -97,7 +97,7 @@ img {
 }
 /* line 59, css\componment\theme.default.less */
 .page-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 40px;
   margin: 0 0 0 40px;
 }
@@ -159,6 +159,68 @@ a:hover {
 .screen-reader-text {
   position: absolute;
   left: -9000px;
+}
+/** content style **/
+/* line 120, css\componment\theme.default.less */
+h1.page-title {
+  font-weight: bolder;
+}
+/* line 124, css\componment\theme.default.less */
+.entry h1 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #400040;
+  font-weight: bolder;
+  font-size: 36px;
+}
+/* line 131, css\componment\theme.default.less */
+.entry h2 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #600060;
+  font-weight: bolder;
+  font-size: 28px;
+}
+/* line 138, css\componment\theme.default.less */
+.entry h3 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #600060;
+  font-weight: normal;
+  font-size: 24px;
+}
+/* line 145, css\componment\theme.default.less */
+.entry h4 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #800080;
+  font-weight: normal;
+  font-size: 24px;
+}
+/* line 152, css\componment\theme.default.less */
+.entry h5 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #002020;
+  font-weight: bolder;
+  font-size: 24px;
+}
+/* line 159, css\componment\theme.default.less */
+.entry h6 {
+  font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
+  color: #004040;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* line 166, css\componment\theme.default.less */
+.entry ol,
+.entry ul {
+  font-family: comic sans ms;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* line 172, css\componment\theme.default.less */
+.entry li ol,
+.entry li ul {
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+  font-size: 18px;
+  color: #696969;
 }
 /** ================= layout ================= **/
 /** Layout - common **/
@@ -222,7 +284,7 @@ a:hover {
 /* line 18, css\componment\frame.header.less */
 #site-title a {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   text-decoration: none;
   text-shadow: #000 1px 1px 3px;
 }
@@ -231,7 +293,7 @@ a:hover {
   clear: both;
   color: #ccc;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 35px;
   margin: -5px 0 20px 0;
   text-align: center;
@@ -909,13 +971,14 @@ img#wpstats {
   margin: 4px 3px 3px;
   padding: 16px;
   overflow: hidden;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
 }
-/* line 83, css\componment\entry.post.less */
+/* line 84, css\componment\entry.post.less */
 .entry {
   margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
 }
-/* line 88, css\componment\entry.post.less */
+/* line 89, css\componment\entry.post.less */
 .title {
   color: #333;
   font-size: 40px;
@@ -923,21 +986,21 @@ img#wpstats {
   margin-bottom: 15px;
   word-wrap: break-word;
 }
-/* line 96, css\componment\entry.post.less */
+/* line 97, css\componment\entry.post.less */
 .single .title {
   font-size: 40px;
   line-height: 44px;
 }
-/* line 102, css\componment\entry.post.less */
+/* line 103, css\componment\entry.post.less */
 .title a {
   color: #333;
   text-decoration: none;
 }
-/* line 106, css\componment\entry.post.less */
+/* line 107, css\componment\entry.post.less */
 .title a:hover {
   color: #09f;
 }
-/* line 111, css\componment\entry.post.less */
+/* line 112, css\componment\entry.post.less */
 .utility {
   background: #ccc;
   border: 1px solid #666;
@@ -950,7 +1013,7 @@ img#wpstats {
   -khtml-border-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -958,38 +1021,38 @@ img#wpstats {
   padding: 3px 8px;
   text-shadow: 0px 0px 1px #000;
 }
-/* line 126, css\componment\entry.post.less */
+/* line 127, css\componment\entry.post.less */
 #content .utility img.alignleft {
   margin: 4px 8px 0 0;
 }
-/* line 130, css\componment\entry.post.less */
+/* line 131, css\componment\entry.post.less */
 .utility a {
   color: #000;
 }
-/* line 134, css\componment\entry.post.less */
+/* line 135, css\componment\entry.post.less */
 .utility a:hover {
   color: #09F;
 }
-/* line 138, css\componment\entry.post.less */
+/* line 139, css\componment\entry.post.less */
 .utility .format-icons {
   line-height: 16px;
   padding-left: 23px;
   padding-bottom: 3px;
   text-transform: capitalize;
 }
-/* line 145, css\componment\entry.post.less */
+/* line 146, css\componment\entry.post.less */
 .utility .icon-default {
   background: url(images/icon-default.png) no-repeat;
 }
-/* line 149, css\componment\entry.post.less */
+/* line 150, css\componment\entry.post.less */
 .format-aside .utility .format-icons {
   background: url(images/icon-aside.png) no-repeat;
 }
-/* line 153, css\componment\entry.post.less */
+/* line 154, css\componment\entry.post.less */
 .comments-link {
   float: left;
 }
-/* line 157, css\componment\entry.post.less */
+/* line 158, css\componment\entry.post.less */
 .utility-date {
   background: url(images/icon-clock.png) no-repeat 0 4px;
   float: right;
@@ -1018,7 +1081,7 @@ img#wpstats {
 .format-quote cite {
   color: #fff;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
@@ -1075,7 +1138,7 @@ img#wpstats {
 .format-video {
   background: url(images/video-bg.jpg);
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
 }
 /* line 10, css\componment\entry.video.less */
 .format-video .post-inner {
@@ -1114,7 +1177,7 @@ img#wpstats {
   -khtml-border-radius: 10px;
   -webkit-border-radius: 10px;
   color: #b7c720;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -1551,7 +1614,7 @@ h3#reply-title {
 .widget-title {
   border-bottom: 1px solid #ccc;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1771,7 +1834,7 @@ h3#reply-title {
     -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
     color: #000 !important;
     display: block !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif !important;
     overflow: hidden !important;
     position: relative !important;
     top: auto !important;
@@ -1792,7 +1855,7 @@ h3#reply-title {
     -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
     color: #000 !important;
     display: block !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif !important;
     overflow: hidden !important;
     width: 99% !important;
   }
@@ -1811,7 +1874,7 @@ h3#reply-title {
   /* line 54, css\componment\spec.print.less */
   #wrapper #container .post .post-inner .title {
     color: #000 !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif !important;
   }
   /* line 58, css\componment\spec.print.less */
   #wrapper .post .post-inner .utility {
@@ -1838,7 +1901,7 @@ h3#reply-title {
   #site-description {
     color: #333 !important;
     float: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
     font-size: 18px;
     line-height: 1.4em;
     margin: 0;
