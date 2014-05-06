@@ -46,6 +46,14 @@ body {
 img {
   max-width: 100%;
 }
+strong {
+   color: darkgreen;
+   font-size: larger;
+}
+
+em {
+    color: darkolivegreen;
+}
 /* =Structure
 -------------------------------------------------------------- */
 /* The main theme structure */
