@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage distinctionpp
- * @since distinctionpp 1.0
+ * @since distinctionpp 1.1
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -18,33 +18,13 @@
 <meta name="author" content="<?php bloginfo('name'); ?>" />
 <meta name="application-name" content="<?php bloginfo('name'); ?> -- <?php bloginfo('description'); ?>" />
 <meta name="msapplication-TileColor" content="#AAAACC"/>
-<meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/images/blogicon.png" />
+<meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blogicon.png" />
 
-<title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
-
-	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
-	bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'distinctionpp' ), max( $paged, $page ) );
-
-	?></title>
+<title><?php wp_title('|', true, 'right'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <style type="text/css" media="screen">
-	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap.min.css?ver=3.0.3 );
-	@import url( <?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.0.3 );
+	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap.min.css?ver=3.3.6 );
+	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.3.6 );
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
 </style>
 <!--[if lte IE 9]>	<style type="text/css">
@@ -52,10 +32,10 @@
 	background-color: transparent;
 }
 </style><![endif]--><!--[if lt IE 9]>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.with_html5shiv.min.js?ver=2.7.1"></script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.with_html5shiv.min.js?ver=3.3.1"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.min.js?ver=2.7.1"></script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.min.js?ver=3.3.1"></script>
 <style type="text/css">
 .gradient {
 	filter: none;

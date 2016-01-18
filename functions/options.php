@@ -156,7 +156,15 @@ function wp_distinctionpp_get_contextual_help_text() {
 
 function wp_distinctionpp_contextual_help() {
 	$wp_distinctionpp_contextual_help_text = wp_distinctionpp_get_contextual_help_text();
-	add_contextual_help( 'appearance_page_wp_distinctionpp-settings', $wp_distinctionpp_contextual_help_text  );
+    $screen = get_current_screen();
+    // Add configure page
+    $screen->add_help_tab( array(
+        'id'        => 'appearance_page_wp_distinctionpp-settings',
+        'title'     => 'distinctionpp ' . __('settings'),
+        'content'   => $wp_distinctionpp_contextual_help_text
+    ) );
+    
+	// add_contextual_help( 'appearance_page_wp_distinctionpp-settings', $wp_distinctionpp_contextual_help_text  );
 }
 // Add contextual help to Admin Options page
 add_action('admin_init', 'wp_distinctionpp_contextual_help', 10, 3);

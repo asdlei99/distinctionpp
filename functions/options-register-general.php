@@ -29,7 +29,7 @@ add_settings_field('wp_distinctionpp_setting_display_footer_credit', 'Footer Cre
 // Header Settings Section
 function wp_distinctionpp_settings_general_thanks_section_text() { ?>
 	<p><?php _e( 'To get the most out of this theme make sure you are using the most recent version of WordPress and experiment with adding a post format when creating new posts.', 'wp_distinctionpp' ); ?></p>
-	<p><?php _e( 'For additional ideas on how to best utilize distinctionpp for your website check out <a href="https://git.oschina.net/owent/distinctionpp">https://git.oschina.net/owent/distinctionpp</a> or refer to the contextual help screen for descriptions and help regarding each theme option.', 'wp_distinctionpp' ); ?></p>
+	<p><?php _e( 'For additional ideas on how to best utilize distinctionpp for your website check out <a href="https://github.com/owt5008137/distinctionpp">https://github.com/owt5008137/distinctionpp</a> or refer to the contextual help screen for descriptions and help regarding each theme option.', 'wp_distinctionpp' ); ?></p>
 	<p><?php _e( 'If you ever have any issues with this theme you can always submit a support ticket at <a href="http://www.owent.net">http://www.owent.net</a> and someone will try to assist you right away.', 'wp_distinctionpp' ); ?></p>
 	<p><?php _e( 'We hope you enjoy the theme and may it serve you well for a very long time.', 'wp_distinctionpp' ); ?></p>
 <?php }

@@ -1,6 +1,11 @@
 /**
  * Theme Name: distinctionpp
- * Theme URI: https://git.oschina.net/owent/distinctionpp
+ * Theme URI: https://github.com/owt5008137/distinctionpp
+ * Version: 1.1
+ * Author: owent
+ * Author URI: https://owent.net/
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 /** ================= common & config ================= **/
 /**
@@ -46,28 +51,43 @@ body {
 img {
   max-width: 100%;
 }
+/* line 15, css\componment\theme.default.less */
 strong {
-   color: darkgreen;
-   font-size: larger;
+  color: darkgreen;
+  font-size: larger;
 }
-
+/* line 20, css\componment\theme.default.less */
 em {
-    color: darkolivegreen;
+  color: darkolivegreen;
 }
 /* =Structure
 -------------------------------------------------------------- */
 /* The main theme structure */
-/* line 19, css\componment\theme.default.less */
+/* line 28, css\componment\theme.default.less */
+.alignleft {
+  float: left;
+}
+/* line 32, css\componment\theme.default.less */
+.alignright {
+  float: right;
+}
+/* line 36, css\componment\theme.default.less */
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 42, css\componment\theme.default.less */
 #main {
   margin: 0 auto;
   width: 100%;
 }
-/* line 24, css\componment\theme.default.less */
+/* line 47, css\componment\theme.default.less */
 #colophon {
   margin: 0 auto;
   width: 100%;
 }
-/* line 28, css\componment\theme.default.less */
+/* line 51, css\componment\theme.default.less */
 #wrapper {
   clear: both;
   margin: 0 auto;
@@ -75,48 +95,48 @@ em {
   width: 100%;
 }
 /* Structure the footer area */
-/* line 36, css\componment\theme.default.less */
+/* line 59, css\componment\theme.default.less */
 #footer-widget-area {
   overflow: hidden;
 }
-/* line 39, css\componment\theme.default.less */
+/* line 62, css\componment\theme.default.less */
 #footer-widget-area .widget-area {
   float: left;
   margin-right: 20px;
   width: 220px;
 }
-/* line 44, css\componment\theme.default.less */
+/* line 67, css\componment\theme.default.less */
 #footer-widget-area #fourth {
   margin-right: 0;
 }
-/* line 47, css\componment\theme.default.less */
+/* line 70, css\componment\theme.default.less */
 #site-info {
   float: left;
   font-size: 12px;
   margin-left: 20px;
   width: 550px;
 }
-/* line 53, css\componment\theme.default.less */
+/* line 76, css\componment\theme.default.less */
 #site-generator {
   float: right;
   margin-right: 20px;
   width: 320px;
   text-align: right;
 }
-/* line 59, css\componment\theme.default.less */
+/* line 82, css\componment\theme.default.less */
 .page-title {
   font-family: Arial, 'Microsoft YaHei', Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
   font-size: 40px;
   margin: 0 0 0 40px;
 }
-/* line 64, css\componment\theme.default.less */
+/* line 87, css\componment\theme.default.less */
 .page-title span {
   text-transform: capitalize;
 }
 /* =Global Elements
 -------------------------------------------------------------- */
 /* Main global 'theme' and typographic styles */
-/* line 73, css\componment\theme.default.less */
+/* line 96, css\componment\theme.default.less */
 hr {
   background-color: #e7e7e7;
   border: 0;
@@ -125,104 +145,104 @@ hr {
   margin-bottom: 18px;
 }
 /* Text elements */
-/* line 82, css\componment\theme.default.less */
+/* line 105, css\componment\theme.default.less */
 blockquote {
   font-style: italic;
   min-height: 50px;
   padding: 0 75px 0 100px;
 }
-/* line 87, css\componment\theme.default.less */
+/* line 110, css\componment\theme.default.less */
 blockquote blockquote {
   padding: 0 0 0 100px;
 }
-/* line 90, css\componment\theme.default.less */
+/* line 113, css\componment\theme.default.less */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
-/* line 95, css\componment\theme.default.less */
+/* line 118, css\componment\theme.default.less */
 q::before {
   content: '"';
 }
-/* line 98, css\componment\theme.default.less */
+/* line 121, css\componment\theme.default.less */
 q::after {
   content: '"';
 }
-/* line 101, css\componment\theme.default.less */
+/* line 124, css\componment\theme.default.less */
 a:link {
   color: #09f;
 }
-/* line 104, css\componment\theme.default.less */
+/* line 127, css\componment\theme.default.less */
 a:visited {
   color: #09f;
 }
-/* line 107, css\componment\theme.default.less */
+/* line 130, css\componment\theme.default.less */
 a:active,
 a:hover {
   color: #F33;
 }
 /* Text meant only for screen readers */
-/* line 113, css\componment\theme.default.less */
+/* line 136, css\componment\theme.default.less */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
 }
 /** content style **/
-/* line 120, css\componment\theme.default.less */
+/* line 143, css\componment\theme.default.less */
 h1.page-title {
   font-weight: bolder;
 }
-/* line 124, css\componment\theme.default.less */
+/* line 147, css\componment\theme.default.less */
 .entry h1 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #400040;
   font-weight: bolder;
   font-size: 36px;
 }
-/* line 131, css\componment\theme.default.less */
+/* line 154, css\componment\theme.default.less */
 .entry h2 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #600060;
   font-weight: bolder;
   font-size: 28px;
 }
-/* line 138, css\componment\theme.default.less */
+/* line 161, css\componment\theme.default.less */
 .entry h3 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #600060;
   font-weight: normal;
   font-size: 24px;
 }
-/* line 145, css\componment\theme.default.less */
+/* line 168, css\componment\theme.default.less */
 .entry h4 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #800080;
   font-weight: normal;
   font-size: 24px;
 }
-/* line 152, css\componment\theme.default.less */
+/* line 175, css\componment\theme.default.less */
 .entry h5 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #002020;
   font-weight: bolder;
   font-size: 24px;
 }
-/* line 159, css\componment\theme.default.less */
+/* line 182, css\componment\theme.default.less */
 .entry h6 {
   font-family: 'Microsoft YaHei', Helvetica, arial, freesans, clean, sans-serif;
   color: #004040;
   font-weight: bolder;
   font-size: 20px;
 }
-/* line 166, css\componment\theme.default.less */
+/* line 189, css\componment\theme.default.less */
 .entry ol,
 .entry ul {
   font-family: comic sans ms;
   font-weight: bolder;
   font-size: 20px;
 }
-/* line 172, css\componment\theme.default.less */
+/* line 195, css\componment\theme.default.less */
 .entry li ol,
 .entry li ul {
   font-family: 'Microsoft YaHei';
@@ -2005,3 +2025,4 @@ h3#reply-title {
     margin-right: 0 !important;
   }
 }
+/*# sourceMappingURL=style.css.map */

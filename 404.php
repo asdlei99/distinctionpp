@@ -16,7 +16,7 @@ get_header(); ?>
             	<div class="post-inner">
 					<div class="not_found_item">
 					    <p><span>4</span><span>0</span><span>4</span></p>
-					    <p>呵呵，这个页面找不到了(´･ω･`)</p>
+					    <p>Page Not Found (´･ω･`)</p>
 					</div>
 					<div class="entry">
 						<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'distinctionpp' ); ?></p>

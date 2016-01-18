@@ -51,7 +51,7 @@ if ( ! function_exists( 'wp_distinctionpp_setup' ) ):
  *
  * @uses add_theme_support() To add support for post thumbnails and automatic feed links.
  * @uses register_nav_menus() To add support for navigation menus.
- * @uses add_custom_background() To add support for a custom background.
+ * @uses add_theme_support( 'custom-background', $args )  To add support for a custom background.
  * @uses add_editor_style() To style the visual editor.
  * @uses load_theme_textdomain() For translation/localization support.
  * @uses add_custom_image_header() To add support for a custom header.
@@ -94,7 +94,7 @@ function wp_distinctionpp_setup() {
 	) );
 
 	// This theme allows users to set a custom background
-	add_custom_background();
+	add_theme_support('custom-background');
 
 }
 endif;
@@ -126,6 +126,33 @@ function wp_distinctionpp_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'wp_distinctionpp_page_menu_args' );
 
+/**
+ * Filters wp_title to print a neat <title> tag based on what is being viewed.
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep   Optional separator.
+ * @return string The filtered title.
+ */
+function wp_distinctionpp_title_format($title, $sep) {
+    /*
+	 * Print the <title> tag based on what is being viewed.
+	 */
+	global $page, $paged;
+	// Add the blog name
+    $title .= get_bloginfo( 'name', 'display' );
+
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title .= " $$sep $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
+        
+    return $title;
+}
+add_filter( 'wp_title', 'wp_distinctionpp_title_format', 10, 2 );
 
 function wp_distinctionpp_init_method() {
 	if(!is_admin()) {

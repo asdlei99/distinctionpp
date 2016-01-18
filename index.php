@@ -10,7 +10,7 @@
  *
  * @package WordPress
  * @subpackage distinctionpp
- * @since distinctionpp 1.0
+ * @since distinctionpp 1.1
  */
 
 get_header(); ?>
