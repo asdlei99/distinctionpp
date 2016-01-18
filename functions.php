@@ -66,6 +66,8 @@ add_action( 'after_setup_theme', 'wp_distinctionpp_setup' );
 
 function wp_distinctionpp_setup() {
 
+    add_theme_support( 'title-tag' );
+    
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	// add time() to the end of editor-style.css so that you'll always see the latest version
 	add_editor_style('editor-style.css?' . time());
@@ -95,6 +97,8 @@ function wp_distinctionpp_setup() {
 
 	// This theme allows users to set a custom background
 	add_theme_support('custom-background');
+    
+    add_theme_support( "custom-header");
 
 }
 endif;
