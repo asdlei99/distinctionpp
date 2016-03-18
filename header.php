@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage distinctionpp
- * @since distinctionpp 1.1
+ * @since distinctionpp 1.2
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

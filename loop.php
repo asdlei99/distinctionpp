@@ -15,7 +15,7 @@
  *
  * @package WordPress
  * @subpackage distinctionpp
- * @since distinctionpp 1.0
+ * @since distinctionpp 1.2
  */
 ?>
 

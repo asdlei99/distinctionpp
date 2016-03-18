@@ -25,3 +25,8 @@ Changelog
 
 v1.0.0
  -- import bootstrap & less
+
+v 1.2.0
+ -- use bootstrap as default table style
+ -- reduce js files
+ -- fix some warning

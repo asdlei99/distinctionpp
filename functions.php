@@ -35,7 +35,7 @@
  *
  * @package WordPress
  * @subpackage distinctionpp
- * @since distinctionpp 1.0
+ * @since distinctionpp 1.2
  */
 
 if ( ! function_exists( 'wp_distinctionpp_setup' ) ):
@@ -67,7 +67,7 @@ add_action( 'after_setup_theme', 'wp_distinctionpp_setup' );
 function wp_distinctionpp_setup() {
 
     add_theme_support( 'title-tag' );
-    
+
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	// add time() to the end of editor-style.css so that you'll always see the latest version
 	add_editor_style('editor-style.css?' . time());
@@ -97,7 +97,7 @@ function wp_distinctionpp_setup() {
 
 	// This theme allows users to set a custom background
 	add_theme_support('custom-background');
-    
+
     add_theme_support( "custom-header");
 
 }
@@ -153,7 +153,7 @@ function wp_distinctionpp_title_format($title, $sep) {
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
 		$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
-        
+
     return $title;
 }
 add_filter( 'wp_title', 'wp_distinctionpp_title_format', 10, 2 );
@@ -161,9 +161,9 @@ add_filter( 'wp_title', 'wp_distinctionpp_title_format', 10, 2 );
 function wp_distinctionpp_init_method() {
 	if(!is_admin()) {
 		wp_enqueue_script( 'jquery' );
-		// wp_enqueue_script( 'es5-shim', get_template_directory_uri() . '/js/es5-shim/es5-shim.min.js?ver=2.1.0' );
+		// wp_enqueue_script( 'es5-shim', get_template_directory_uri() . '/js/es5-shim/es5-shim.min.js?ver=4.5.6' );
 		// wp_enqueue_script( 'less', get_template_directory_uri() . '/js/less.min.js?ver=2.1.0' , array('es5-shim') );
-		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/js/bootstrap.min.js?ver=3.0.3' , array('jquery') );
+		// wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/js/bootstrap.min.js?ver=3.3.6' , array('jquery') );
 	    wp_enqueue_script( 'simplemetro-plugin', get_template_directory_uri() . '/js/SimpleMetro.plugin.min.js?ver=0.8.0', array('jquery') );
 		wp_enqueue_script( 'distinctionpp-js', get_template_directory_uri() . '/js/distinctionpp.min.js', array('jquery', 'simplemetro-plugin') );
 	}

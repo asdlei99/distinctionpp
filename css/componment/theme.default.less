@@ -1,25 +1,35 @@
 @import "../common.less";
 
+@import "../bootstrap-src/less/variables.less";
+@import "../bootstrap-src/less/mixins.less";
+@import "../bootstrap-src/less/tables.less";
+
 body {
     line-height: 145%;
     background: #a8a7a7 url(images/body-bg.jpg) repeat !important;
     min-width: 936px;
-    font-size: 16px;
+    font-size: 1.6em;
 }
 
 img {
     max-width: 100%;
 }
 
-
 strong {
    color: darkgreen;
-   font-size: larger;
 }
 
-em {
-    color: darkolivegreen;
+pre, code {
+    font-family: @distincionpp_conf_font_family_code;
 }
+
+/* ------------------------ copy from bootstrap ------------------------ */
+table {
+    .table;
+    .table-bordered;
+    .table-striped;
+}
+
 /* =Structure
 -------------------------------------------------------------- */
 
@@ -103,9 +113,11 @@ hr {
 
 /* Text elements */
 blockquote {
-    font-style: italic;
     min-height: 50px;
     padding: 0 75px 0 100px;
+    border-left: solid 3px Gray;
+    font-size: 1em;
+    background-color: #E0E0E0;
 }
 blockquote blockquote{
     padding: 0 0 0 100px;
@@ -145,56 +157,48 @@ h1.page-title {
 }
 
 .entry h1 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #400040;
     font-weight: bolder;
-    font-size: 36px;
+    font-size: 2.4em;
 }
 
 .entry h2 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #600060;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 2.0em;
 }
 
 .entry h3 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #600060;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.8em;
 }
 
 .entry h4 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #800080;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.6em;
 }
 
 .entry h5 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #002020;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.6em;
 }
 
 .entry h6 {
-    font-family: 'Microsoft YaHei', Helvetica,arial,freesans,clean,sans-serif;
+    font-family: @distincionpp_conf_font_family_header;
     color: #004040;
     font-weight: bolder;
-    font-size: 20px;
-}
-
-.entry ol, .entry ul {
-    font-family: comic sans ms;
-    font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 .entry li ol, .entry li ul {
-    font-family: 'Microsoft YaHei';
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 0.9em;
     color: #696969;
 }
