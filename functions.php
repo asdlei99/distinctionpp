@@ -534,10 +534,31 @@ function wp_distinctionpp_sidebar() {
 	global $wp_distinctionpp_options;
 	if ( 'left' == $wp_distinctionpp_options['sidebar_position'] ) { ?>
 	<style type="text/css">
-		#container {float: right;margin: 0 0 0 -270px;}
-		#content {margin: 0 20px 0 280px;}
-		#primary, #secondary {float: left;overflow: hidden;}
-		#secondary {clear: left;}
+		#container {
+			width: 100%;
+		}
+
+		#content {
+			margin: 0 2% 0 2%;
+		}
+		#primary,
+		#secondary {
+			overflow: hidden;
+			margin: 0 2% 0 2%;
+		}
+
+		#primary {
+			position: absolute;
+			right: 0px;
+			top: 300px;
+		}
+
+		#secondary {
+			/*clear: right;*/
+			position: absolute;
+			left: 0px;
+			top: 300px;
+		}
 		#main .widget-area ul {margin-right: 0;padding: 0 0 0 20px;
 	</style>
 	<?php }

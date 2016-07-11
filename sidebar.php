@@ -9,6 +9,9 @@
 ?>
 
 		<div id="primary" class="widget-area" role="complementary"><aside>
+			<button type="button" id="widget-area-toggle-btn" class="btn btn-default">
+				<span class="glyphicon glyphicon-th-list"></span>
+			</button><div class="clearfix"></div>
 			<ul class="xoxo">
 
 <?php

@@ -22,21 +22,10 @@ jQuery(document).ready(function(){
     });
 
     // Menu
-    /*jQuery(".widget-area").SimpleFliud({
-        // 数值设置
-        panel_width: 286,      // 面板宽度，单位为像素，默认为第一个选择器元素的宽度(默认为选择结果第一个元素的宽度)
-        margin_row: 2,
-        margin_col: 2,
-        duration: 500, // 动画过度时间
-        
-        // 选择器设置
-        panel: ".xoxo>li",            // 内部面板选择器(默认为div)
-        // wrapper: "#content",     // 包装器选择器，默认为容器选择器
-
-        // 其他设置
-        auto_width: true,         // 自动调整宽度使之填满整个panel(默认为false)
-        action_type: is_transition_enabled? "immediately": "animation"  // 变换类型,当浏览器支持CSS3时,使用CSS3动画
-    });*/
+    jQuery("#widget-area-toggle-btn").click(function(){
+        jQuery(".widget-area").slideToggle();
+    });
+    jQuery(".widget-area").hide();
     
     if (is_transition_enabled) {
         jQuery("#post-wrapper").css({"transition": "all .5s ease-in-out"})

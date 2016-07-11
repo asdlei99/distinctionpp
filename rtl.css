@@ -20,19 +20,32 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
 #container {
-	float: right;
-	margin: 0 0 0 -240px;
+    width: 100%;
 }
+
 #content {
-	margin: 0 20px 36px 280px;
+    margin: 0 2% 0 2%;
 }
+
 #primary,
 #secondary {
-	float: left;
+    overflow: hidden;
+    margin: 0 2% 0 2%;
 }
+
+#primary {
+    position: absolute;
+    right: 0px;
+    top: 300px;
+}
+
 #secondary {
-	clear: left;
+    /*clear: right;*/
+    position: absolute;
+    left: 0px;
+    top: 300px;
 }
+
 
 
 /* =Fonts
