@@ -19,12 +19,13 @@
 <meta name="application-name" content="<?php bloginfo('name'); ?> -- <?php bloginfo('description'); ?>" />
 <meta name="msapplication-TileColor" content="#AAAACC"/>
 <meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blogicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title><?php wp_title('|', true, 'right'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <style type="text/css" media="screen">
-	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap.min.css?ver=3.3.6 );
-	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.3.6 );
+	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap.min.css?ver=3.3.7 );
+	@import url( <?php echo esc_url( get_template_directory_uri() ) ; ?>/js/bootstrap/css/bootstrap-theme.min.css?ver=3.3.7 );
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
 </style>
 <!--[if lte IE 9]>	<style type="text/css">
@@ -32,10 +33,10 @@
 	background-color: transparent;
 }
 </style><![endif]--><!--[if lt IE 9]>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.with_html5shiv.min.js?ver=3.3.1"></script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.with_html5shiv.min.js?ver=3.5.0"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.min.js?ver=3.3.1"></script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/modernizr.min.js?ver=3.5.0"></script>
 <style type="text/css">
 .gradient {
 	filter: none;
