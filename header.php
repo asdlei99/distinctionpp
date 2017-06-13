@@ -19,7 +19,10 @@
 <meta name="application-name" content="<?php bloginfo('name'); ?> -- <?php bloginfo('description'); ?>" />
 <meta name="msapplication-TileColor" content="#AAAACC"/>
 <meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blogicon.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php 
+if(is_singular()) { 
+?> <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php } ?>
 
 <title><?php wp_title('|', true, 'right'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
